@@ -1,0 +1,21 @@
+/* 關於我們 */
+/* 固定寬的容器,且一定置中 */
+.wrap{
+    width: 960px;
+    margin: auto;
+}
+.contact{
+    padding: 40px 0 60px;
+}
+.contact .wrap{
+    display: flex;
+}
+.contact .item{
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+}
+.contact .item img{
+    border-radius: 50%;
+    /* 圓角 */
+}

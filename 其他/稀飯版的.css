@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding-top: 70px;
+    background-image: url(../images/body_bg.png);
+    background-repeat: repeat-y;
+    background-position:right;
+    background-attachment:fixed
+    /* 固定背景 */
+}
+html {
+    font-size: 100%;
+ }
+
+
+/* header區 */
+.header{
+    display: flex;
+    padding: 6px 10px;
+    background-color: #82cddb;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    }
+/* logo */
+.header .logo{
+    display: block;
+    padding: 8px 0;
+    margin-left: 30px;
+}
+/* 下拉式選單 */
+.header nav{
+    display: inline-block;
+    text-align: right;
+    width: 100%;
+    font-size: 0;
+    position: fixed;
+    left:900px;
+    top: 18pxs;
+}
+.header nav a{
+    display: inline-block;
+    color: #6f7ea2;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 52px;
+    /* 選單置中 */
+    padding: 0 10px;
+
+}
+.header nav a:hover{
+    transition: 0.7s;
+    background-color: #fa0;
+}
+.header-nav li {
+    white-space: nowrap;
+    background-color: #fff;
+    border-right: 1px solid #82cddb;
+    text-align: center;
+}
+
+.header-nav>li:last-child {
+    border-right: none;
+}
+.header-nav > li{
+    float: left;
+    /* 只有第一層是靠左對齊*/
+}
+.header-nav ul{
+    /*隱藏次選單*/
+    display: none;
+}
+
+.header-nav li:hover > ul{
+    /* 滑鼠滑入展開次選單*/
+    display: block;
+}
+
+/* header背景圖 */
+.banner img{
+    width: 100%;
+}
+
+/* 麵包屑.path */
+.path{
+    display: flex;
+    width: 960px;
+    margin: auto;
+}
+.path li{
+    position: relative;
+    padding: 6px 8px;
+}
+.path li a{
+    color: #6f7ea2;
+    text-decoration: none;
+    font-size: 14px;
+}
+.path li + li::before{
+    /* 偽類 */
+    content: '>';
+    color: #6f7ea2;
+    position: absolute;
+    left: 0;
+}
+
+
+/* 關於我們 */
+/* 固定寬的容器,且一定置中 */
+.wrap{
+    width: 960px;
+    margin: auto;
+}
+.about{
+    padding: 40px 0 60px;
+}
+.about .wrap{
+    display: flex;
+}
+.about .item{
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+}
+.about .item img{
+    border-radius: 50%;
+    /* 圓角 */
+}
+
+.item h3{
+    font-size: 36px;
+    padding: 0 0 20px;
+}
+
+.about > h2{
+    width: 960px;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+}
+.about > p{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
+}
+
+
+/* 產品 */
+.products{
+    background-color: #f19dae;
+}
+.products .wrap{
+    display: flex;
+}
+.products .item{
+    width: 50%;
+}
+.products .item img{
+    width: 100%;
+    vertical-align: bottom;
+    /* 垂直方向的對齊方式 */
+}
+.products .text{
+    display: flex;
+    flex-direction: column;
+    /* 資料直排 */
+    justify-content: center;
+    /* 資料置中 */
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* 服務項目 */
+.service{
+    padding: 40px 0;
+}
+.service > h2{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    font-size: 42px;
+    padding: 20px 0;
+}
+.service > p{
+    width: 960px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.service .wrap{
+    display: flex;
+}
+.service .item{
+    margin: 0 10px;
+    width: 300px;
+    text-align: center;
+}
+.service .item img{
+    width: 100%;
+}
+
+
+
+/* footer */
+.footer{
+    text-align: center;
+    background-color: #fbca4d;
+    color: #d19b7b;
+    padding: 20px 0;
+}

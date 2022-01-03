@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            padding-top: 80px;
+        }
+        /* header區 */
+        .header{
+            display: flex;
+            padding: 10px 10px;
+            background-color: #c09f80;
+            opacity: .7;
+            position: fixed;
+            opacity: .8;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+        .header .logo{
+            display: inline-block;
+            padding: 10px 0;
+            margin-left: 30px;
+        }
+        /* 選單 */
+        ul .header-nav{
+            border: 1px solid orange;
+            display: inline-block;
+            font-family: 'Microsoft JhengHei', Arial, sans-serif;
+            font-size: 13px;
+            
+        }
+        ul.header-nav li {
+            position: relative;
+            white-space: nowrap;
+        }
+        ul.header-nav>li:last-child {
+            border-right: none;
+        }
+        ul.header-nav > li{
+            float: left;
+            /* 只有第一層是靠左對齊*/
+        }
+        .header nav a{
+            display: inline-block;
+            color: #000;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 52px;
+            padding: 0px 10px;
+            transition: .7s;
+        }
+        ul.header-nav a:hover {
+            /* 滑鼠滑入按鈕變色*/
+            background-color: rgb(255, 170, 0);
+            border-radius: 45%;
+        }
+        ul.header-nav li:hover>a {
+            /* 滑鼠移入次選單上層按鈕保持變色*/
+            background-color: rgb(255, 170, 0);
+            color: #fff;
+        }
+        ul.header-nav ul li:last-child{
+            border-bottom: none;
+        }
+        ul.header-nav ul{
+            /*隱藏次選單*/
+            display: none;
+        }
+        ul.header-nav li:hover > ul{
+            /* 滑鼠滑入展開次選單*/
+            display: block;
+        }
+
+        /* header滿版圖 */
+        .banner img{
+            width: 100%;
+        } 
+
+    </style>
+</head>
+<body>
+    <!-- header標題選單區 -->
+    <div class="header">
+        <!-- logo -->
+        <a href="#" class="logo">
+            <img src="https://picsum.photos/80/40/?random=1" alt="小牧">
+        </a>
+        <!-- 選單nav -->
+        <nav>
+            <ul class="header-nav">
+                <li>
+                    <a href="#"><span>關於小牧</span></a>
+                    <ul>
+                        <li>
+                            <a href="#">牛牛區</a></li>
+                        <li><a href="#">動物區</a></li>
+                        <li><a href="#">日常行程</a></li>
+                        <li><a href="#">環境介紹</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>園區導覽</span></a></li>
+                <li><a href="#"><span>親子互動</span></a></li>
+                <li><a href="#"><span>線上商品</span></a></li>
+                <li>
+                    <a href="#"><span>會員專區</span></a>
+                    <ul>
+                        <li><a href="#">訂單查詢</a></li>
+                        <li><a href="#">會員資料</a></li>
+                        <li><a href="#">常見問題</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><span>聯絡我們</span></a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <!-- header 滿版 -->
+    <div class="banner">
+        <img src="theme/headbar_bg.jpg" alt="">
+    </div>
+</body>
+</html>

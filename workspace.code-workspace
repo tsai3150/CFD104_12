@@ -1,0 +1,41 @@
+{
+	"folders": [
+		{
+			"name": "整理",
+			"path": "..\\..\\..\\VS Code\\整理"
+		},
+		{
+			"name": "VS Code",
+			"path": ".."
+		},
+		{
+			"name": "Html 操作",
+			"path": "..\\Html 操作"
+		},
+		{
+			"name": "RWD",
+			"path": "..\\RWD"
+		},
+		{
+			"name": "金魚都會",
+			"path": "..\\金魚都會"
+		},
+		{
+			"name": "Javascript 操作",
+			"path": "..\\Javascript 操作"
+		},
+		{
+			"name": "task",
+			"path": "."
+		},
+		{
+			"path": "..\\test"
+		},
+		{
+			"path": "..\\備份2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "VS Code"
+	}
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 70px;
+            background-image: url(theme/body_bg.png);
+            background-repeat: repeat-y;
+            background-position:right;
+            background-attachment:fixed
+            /* 固定背景 */
+            
+        }
+        /* 萬用選取器 */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 1200px;
+            /* 超過1200px則以設定的為主,小於則以100%為主 */
+            margin: auto;
+            /* 置中 */
+        }
+        /* 分欄容器 */
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            /* 橫排及換行 */
+            padding-left: 10px;
+            padding-right: 10px;
+            
+        }
+        /* 屬性選取器 */
+        [class*=col-]{
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+        .col-1{ width: 3.333333%;}
+        .col-2{ width: 16.666666%;}
+        .col-3{ width: 25%;}
+        .col-4{ width: 33.333333%;}
+        .col-5{ width: 41.666666%;}
+        .col-6{ width: 50%;}
+        .col-7{ width: 58.333333%;}
+        .col-8{ width: 66.666666%;}
+        .col-9{ width: 75%;}
+        .col-10{ width: 83.333333%;}
+        .col-11{ width: 91.666666%;}
+        .col-12{ width: 100%;}
+
+        /* 具有順序性,因此先後不能亂放 */
+        /* md 平版直 */
+        @media screen and (min-width:768px){
+            .col-md-1{ width: 3.333333%;}
+            .col-md-2{ width: 16.666666%;}
+            .col-md-3{ width: 25%;}
+            .col-md-4{ width: 33.333333%;}
+            .col-md-5{ width: 41.666666%;}
+            .col-md-6{ width: 50%;}
+            .col-md-7{ width: 58.333333%;}
+            .col-md-8{ width: 66.666666%;}
+            .col-md-9{ width: 75%;}
+            .col-md-10{ width: 83.333333%;}
+            .col-md-11{ width: 91.666666%;}
+            .col-md-12{ width: 100%;}   
+        }
+        /* lg 平版橫up */
+        @media screen and (min-width:992px){
+            .col-lg-1{ width: 3.333333%;}
+            .col-lg-2{ width: 16.666666%;}
+            .col-lg-3{ width: 25%;}
+            .col-lg-4{ width: 33.333333%;}
+            .col-lg-5{ width: 41.666666%;}
+            .col-lg-6{ width: 50%;}
+            .col-lg-7{ width: 58.333333%;}
+            .col-lg-8{ width: 66.666666%;}
+            .col-lg-9{ width: 75%;}
+            .col-lg-10{ width: 83.333333%;}
+            .col-lg-11{ width: 91.666666%;}
+            .col-lg-12{ width: 100%;}   
+        }
+        /* xl 桌機 */
+        @media screen and (min-width:1024px){
+            .col-xl-1{ width: 3.333333%;}
+            .col-xl-2{ width: 16.666666%;}
+            .col-xl-3{ width: 25%;}
+            .col-xl-4{ width: 33.333333%;}
+            .col-xl-5{ width: 41.666666%;}
+            .col-xl-6{ width: 50%;}
+            .col-xl-7{ width: 58.333333%;}
+            .col-xl-8{ width: 66.666666%;}
+            .col-xl-9{ width: 75%;}
+            .col-xl-10{ width: 83.333333%;}
+            .col-xl-11{ width: 91.666666%;}
+            .col-xl-12{ width: 100%;}   
+        }
+
+
+
+        .item{
+            background-color: #faa;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 格線系統 -->
+    <!-- col排版12欄 -->
+    <!-- 並利用屬性選取器 -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas commodi corrupti, nulla porro dolores illum eaque, iure animi corporis neque excepturi aliquid, voluptatibus dignissimos architecto explicabo pariatur! Assumenda, dolor consequatur!</div>
+    </div>
+    <div class="col-6">
+        <div class="row">
+            <div class="col-3">
+                <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio nulla tempore eius? Libero reprehenderit rem iure iste eligendi! Doloribus quo beatae assumenda nostrum odio dolores porro natus, dolorum deleniti exercitationem?</div>
+            </div>
+            <div class="col-3">
+                <div class="item">Eos aliquam laboriosam adipisci. Autem soluta voluptates rem deleniti, cum veniam deserunt? Sint id autem ut dicta natus voluptatum voluptate harum eligendi reiciendis! Facilis dolore error dicta repellendus, assumenda sit?</div>
+            </div>
+            <div class="col-3">
+                <div class="item">Porro iusto ipsa quis, aliquam exercitationem quia, neque eveniet nam similique tenetur obcaecati expedita ea saepe explicabo quod dolorem sint ullam, est non ipsam unde cum aliquid. Laborum, rerum dolores!</div>
+            </div>
+            <div class="col-3">
+                <div class="item">Esse voluptas aperiam veritatis perferendis unde nostrum itaque provident ea laborum corrupti! Dolorum sit tempora quo et magnam veniam? Beatae, quisquam. Debitis, fugit rem officiis rerum doloribus ullam dolorum commodi?</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
