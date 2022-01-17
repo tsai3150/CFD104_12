@@ -44,6 +44,7 @@
     padding: 10px;
     border-radius: 25px;
     position: relative;
+    cursor: pointer;
 }
 .latestnews-banner .item a{
     display: flex;
@@ -168,8 +169,8 @@
 
 
 /* 內容 */
-#newUpBox{
-    display: none;
+#newBox{
+    /* display: none; */
 }
  html .nowBox-group{
     background-color: rgba(255, 255, 255, .5);
@@ -210,7 +211,7 @@
 }
 /* 內文 */
 .page-banner .page-class{
-    width: 540px;
+    width: 650px;
     border-radius: 25px;
     background-color: rgba(255, 255, 255, .5);
     box-shadow: 0   0   60px #ddd;
@@ -258,17 +259,18 @@
 .page-banner .item-class .classTxt p{
     /* line-height: 1.5em; */
     color: #6f7ea2;
-    line-height: 2em;
-    margin-bottom: 2em;
+    line-height: 33px;
+    margin-bottom: 10px;
     font-size: 18px;
     letter-spacing: 1px;
+    
 }
 .page-banner .item-class .classTxt span{
-    font-size: 24px;
+    font-size: 18px;
     /* 文字外框 */
     -webkit-text-stroke: 2px #fbca4d;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 .page-banner .item-class .classTxt h6{
     color: #fbca4d;

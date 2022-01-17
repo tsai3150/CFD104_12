@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/page_css/headerFooter.css">
     <link rel="stylesheet" href="../css/page_css/latestnews.css">
-    <link rel="stylesheet" href="../js/page_js/latestnews.js">
     <script src="https://kit.fontawesome.com/3e93ba0ab0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../js/page_js/latestnews.js">
 </head>
 
 
@@ -23,38 +23,40 @@
     </div>
    <!-- ---------------hearder區-------------------->
    <div class="header">
-    <div class="container">
-        <!-- logo區 -->
-        <a href="./index.html" class="logo">
-            <img src="../images/logo.png" alt="網站名稱">
-        </a>
-        <!-- 選單 -->
-        <nav>
-            <ul class="header-nav">
-                <li><a href="#"><span>園區資訊</span></a>
-                    <ul>
-                        <li><a href="./park_personnel.html">園區介紹</a></li>
-                        <li><a href="./park_animal.html">園區動物</a></li>
-                        <li><a href="./park_surroundings.html">園區環境</a></li>
-                        <li><a href="./park_way.html">交通資訊</a></li>
-                    </ul>
-                </li>
-                <li><a href="./raiders.html"><span>牧場攻略</span></a>
-                    <ul>
-                        <li><a href="./raiders_p.html">烘焙坊</a></li>
-                        <li><a href="./raiders_t.html">捏陶趣</a></li>
-                        <li><a href="#">小小農夫</a></li>
-                        <li><a href="#">高低探索</a></li>
-                        <li><a href="./raiders_star.html">星空夜宿</a></li>
-                        <li><a href="#">必買伴手禮</a></li>
-                    </ul>
-                </li>
-                <li><a href="./latestnews.html"><span>最新消息</span></a></li>
-                <li><a href="./contact.html"><span>聯絡我們</span></a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <!-- logo區 -->
+            <a href="./index.html" class="logo">
+                <img src="../images/logo.png" alt="網站名稱">
+            </a>
+            <!-- 選單 -->
+            <nav>
+                <ul class="header-nav">
+                    <li><a href="#"><span>園區資訊</span></a>
+                        <ul>
+                            <li><a href="./park_personnel.html">園區介紹</a></li>
+                            <li><a href="./park_animal.html">園區動物</a></li>
+                            <li><a href="./park_surroundings.html">園區環境</a></li>
+                            <li><a href="./park_way.html">交通資訊</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./raiders.html"><span>牧場攻略</span></a>
+                        <ul>
+                            <li><a href="./raiders_bread.html">烘焙坊</a></li>
+                            <li><a href="./raiders_ceramics.html">捏陶趣</a></li>
+                            <!-- <li><a href="#">小小農夫</a></li>
+                            <li><a href="#">高低探索</a></li> -->
+                            <li><a href="./raiders_star.html">星空夜宿</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./latestnews.html"><span>最新消息</span></a></li>
+                    <li><a href="./contact.html"><span>聯絡我們</span></a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-</div>
+
+
+
 
 
     
@@ -79,117 +81,109 @@
         </div>
         <div class="wrap">
             <div class="container">
-                <div class="item" onclick="newBox()">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/2022.jpg">
-                        </div>
-                        <div class="tab">熱門</div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>園區有老虎</h3>
-                            <p><span>2022年全品項８折！</span><br>只要是虎年誕生的！大朋友小朋友！快來小牧過新年～</p>
-                        </div>
-                    </a>
+                <div class="item" onclick="newBoxOpen()">
+                    <div class="pic">
+                        <img src="../images/latestnews/2022.jpg">
+                    </div>
+                    <div class="tab">熱門</div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>園區有老虎</h3>
+                        <p><span>2022年全品項８折！</span><br>只要是虎年誕生的！大朋友小朋友！快來小牧過新年～</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/merry.jpg">
-                        </div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>聖誕快閃禮包</h3>
-                            <p><span>想不想要酷東西！</span><br>只要完成園區內集點蓋章活動！<br>即贈 <u>小牧獨家商品！</u></p>
-                        </div>
-                    </a>
+                    <div class="pic">
+                        <img src="../images/latestnews/merry.jpg">
+                    </div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>聖誕快閃禮包</h3>
+                        <p><span>想不想要酷東西！</span><br>只要完成園區內集點蓋章活動！<br>即贈 <u>小牧獨家商品！</u></p>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/virus.jpg">
-                        </div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>勤洗手戴口罩</h3>
-                            <p><span>拍拍手舒緩計畫</span><br>與園區內的動物們拍照並上傳臉書！即贈每日限量鮮奶饅頭！</p>
-                        </div>
-                    </a>
+                    <div class="pic">
+                        <img src="../images/latestnews/virus.jpg">
+                    </div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>勤洗手戴口罩</h3>
+                        <p><span>拍拍手舒緩計畫</span><br>與園區內的動物們拍照並上傳臉書！即贈每日限量鮮奶饅頭！</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/breakfast.jpg">
-                        </div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>爹娘早餐計畫</h3>
-                            <p><span>為了爹娘好</span><br>好好享用一頓早餐！把健康打包給你，冷藏直送！新鮮吃得到！</p>
-                        </div>
-                    </a>
+                    <div class="pic">
+                        <img src="../images/latestnews/breakfast.jpg">
+                    </div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>爹娘早餐計畫</h3>
+                        <p><span>為了爹娘好</span><br>好好享用一頓早餐！把健康打包給你，冷藏直送！新鮮吃得到！</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/barbecue.jpg">
-                        </div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>想烤就烤</h3>
-                            <p><span>不用過節也可以！</span><br>專屬露營區！不想準備材料，更不想善後嗎？小牧幫你辦到好！</p>
-                        </div>
-                    </a>
+                    <div class="pic">
+                        <img src="../images/latestnews/barbecue.jpg">
+                    </div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>想烤就烤</h3>
+                        <p><span>不用過節也可以！</span><br>專屬露營區！不想準備材料，更不想善後嗎？小牧幫你辦到好！</p>
+                    </div>
                 </div>
                 <div class="item">
-                    <a href="#">
-                        <div class="pic">
-                            <img src="../images/latestnews/bread.jpg">
-                        </div>
-                        <div class="icon-heart1"><i class="fas fa-feather"></i></div>
-                        <div class="icon-heart2"><i class="far fa-heart"></i></div>
-                        <div class="txt">
-                            <h3>烘焙坊開課囉~</h3>
-                            <p><span>限量名額快來參加</span><br>手把手！輕鬆課程讓你零失敗！陪伴孩子一起探索！</p>
-                        </div>
-                    </a>
+                    <div class="pic">
+                        <img src="../images/latestnews/bread.jpg">
+                    </div>
+                    <div class="icon-heart1"><i class="fas fa-feather"></i></div>
+                    <div class="icon-heart2"><i class="far fa-heart"></i></div>
+                    <div class="txt">
+                        <h3>烘焙坊開課囉~</h3>
+                        <p><span>限量名額快來參加</span><br>手把手！輕鬆課程讓你零失敗！陪伴孩子一起探索！</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     
-    <div id="newBox">
+
+
+
+    <!-- <div id="newBox">
         <div class="nowBox-group" >
             <div class="page-banner">
-                <div class="page-class">
+                <div class="page-class page1">
                     <div class="icon">
                         <i class="fas fa-times icon-right" onclick="signUpClose()" id=""></i>
                     </div>
                     <div class="item-class">
-                        <div class="classTxt">
-                            <h5>預約程序</h5>
+                        <div class="classTxt step1">
+                            <h5>園區有老虎！</h5>
+                            <h6>2022年全品項８折！</h6>
                             <p>
-                            <span>Step:1.</span>詳閱客戶權益及退款程序。<br>
-                            <span>Step:2.</span>點選您喜愛的課程。 <br>
-                            <span>Step:3.</span>勾選課程時間及日期。<br>
-                            <span>Step:4.</span>輸入相關報名資料。<br>
-                            <span>Step:5.</span>完成預約。<br>
+                                <span>Step:1.</span>上傳『小牧牧場』的照片至個人的 Facebook。<br>
+                                <span>Step:2.</span>打卡 『小牧牧場』即完成此活動！ <br>
+                                <span>Step:3.</span>完成後發佈後，請出示給服務人員。<br>
                             </p><br>
-                            <h6>感謝您的點選！<br>請跟著小牧一步步完成預約吧！<br></h6>
+                            
+                            <h6>提醒您</h6>
+                            <p>
+                                1.主辦單位保留更換贈品及修正、暫停與終止本活動之權利。<br>
+                                2.每個手機只可折扣乙件商品。</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </div> -->
     
-
     <!-- -----------footer區==================== -->
     <div class="main-footer">
         <!-- 主要控制 -->
@@ -197,40 +191,37 @@
             <div class="footer-item">
                 <nav>
                     <a href="./index.html">首頁</a>
-                    <a href="./about.html">關於小牧</a>
                     <a href="./latestnews.html">最新消息</a>
-                    <a href="./contact_problem.html">常見問題</a>
                     <a href="./contact.html">聯絡我們</a>
                 </nav>
             </div>
             <div class="footer-item">
                 <nav>
-                    <a href="./park.html">園區資料</a>
-                    <a href="./park_introduction.html">園區介紹</a>
+                    <a href="#">園區資料</a>
+                    <a href="./park_personnel.html">園區介紹</a>
+                    <a href="./park_animal.html">園區動物</a>
+                    <a href="./park_surroundings.html">園區環境</a>
                     <a href="./park_way.html">交通資訊</a>
                 </nav>
             </div>
             <div class="footer-item">
                 <nav>
                     <a href="./raiders.html">牧場攻略</a>
-                    <a href="./raiders_p.html">烘焙坊</a>
-                    <a href="./raiders_t.html">捏陶趣</a>
-                    <a href="#">小小農夫</a>
-                    <a href="#">高低探索</a>
-                    <a href="#">星空夜宿</a>
-                    <a href="#">必買伴手禮</a>
+                    <a href="./raiders_bread.html">烘焙坊</a>
+                    <a href="./raiders_ceramics.html">捏陶趣</a>
+                    <!-- <a href="#">小小農夫</a> -->
+                    <!-- <a href="#">高低探索</a> -->
+                    <a href="./raiders_star.html">星空夜宿</a>
+                    <!-- <a href="#">必買伴手禮</a> -->
                 </nav>
-            </div>
-            <div class="footer-item footer-subs">
-                <h4>訂閱電子報</h4>
-                <form>
-                    <input type="text" name="">
-                    <input type="submit" value="訂閱">
-                </form>
             </div>
         </div>
         <div class="conpyright">
-            &copy; copyright 2021 by tibame_CFD104_12_tsai-chen
+            &copy; copyright 2021 by tsai-chen<br>
+        </div>
+        <div class="conpyright-bottom">
+            本網站為緯育TibaMe前端工程師CFD104學員專題作品，僅供作業展示用。
+            若有侵權請聯繫[TibaMe-前端設計工程師養成班]，將由專人協助處理。
         </div>
     </div>
 

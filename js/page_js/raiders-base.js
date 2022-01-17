@@ -38,6 +38,7 @@ function signUpClose() {
     var btn = document.getElementById('drop40').style.display = 'none';
     var btn = document.getElementById('signTime').style.display = 'none';
     var btn = document.getElementById('drop60').style.display = 'none';
+    var btn = document.getElementById('newBox').style.display = 'none';
 }
 // step1客戶權益
 function signUpNext() {
