@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小牧牧場~牧場攻略~</title>
+    <!-- title頁面標籤icon -->
+    <link rel="icon" href="../images/logo_icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo_icon.ico" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/page_css/headerFooter.css">
+    <link rel="stylesheet" href="../css/page_css/raiders-base.css">
+    <script src="https://kit.fontawesome.com/3e93ba0ab0.js" crossorigin="anonymous"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/page_js/raiders-base.js"></script>
+</head>
+</head>
+
+
+    <!-- 首頁頂圖片 -->
+    <div class="header-bg">
+        <img src="../images/header_bg.png" alt="">
+    </div>
+   <!-- ---------------hearder區-------------------->
+   <div class="header">
+    <div class="container">
+        <!-- logo區 -->
+        <a href="./index.html" class="logo">
+            <img src="../images/logo.png" alt="網站名稱">
+        </a>
+        <!-- 選單 -->
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#"><span>園區資訊</span></a>
+                    <ul>
+                        <li><a href="./park_personnel.html">園區介紹</a></li>
+                        <li><a href="./park_animal.html">園區動物</a></li>
+                        <li><a href="./park_surroundings.html">園區環境</a></li>
+                        <li><a href="./park_way.html">交通資訊</a></li>
+                    </ul>
+                </li>
+                <li><a href="./raiders.html"><span>牧場攻略</span></a>
+                    <ul>
+                        <li><a href="./raiders_p.html">烘焙坊</a></li>
+                        <li><a href="./raiders_t.html">捏陶趣</a></li>
+                        <li><a href="#">小小農夫</a></li>
+                        <li><a href="#">高低探索</a></li>
+                        <li><a href="./raiders_star.html">星空夜宿</a></li>
+                        <li><a href="#">必買伴手禮</a></li>
+                    </ul>
+                </li>
+                <li><a href="./latestnews.html"><span>最新消息</span></a></li>
+                <li><a href="./contact.html"><span>聯絡我們</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+
+
+<!-- ---------------body區-------------------->
+    <!-- 麵包屑.path -->
+    <div class="path-wrap">
+        <ol class="path">
+            <li><a href="./index.html">首頁</a></li>
+            <li><a href="./raiders.html">牧場攻略</a></li>
+            <li><a href="./raiders_t.html">捏陶趣</a></li>
+        </ol>
+    </div>
+
+
+    <!-- 烘焙坊 -->
+    <div class="base-banner">
+        <div class="base">
+            <h2>捏陶趣</h2>
+            <p>成果一次看，報名請來電！</p>
+        </div>
+        <div class="wrap">
+            <div class="item">
+                <div class="pic">
+                    <img src="../images/raiders/ceramics/teacher.jpg">
+                </div>
+                <div class="txt">
+                    <h3>專業師資</h3>
+                    <p><span>陶藝界專家來了！</span><br>經驗豐富的陶藝師傅，兩位專業助理！<br>陪著你手把手與孩子們一起完成！美麗的手工小品！<br>小班別授課！讓每位家長與孩子們在愉快的假日度過美好的時光。<br><br>課程備有講義及小禮哦！</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="pic">
+                    <img src="../images/raiders/ceramics/pic3.jpg">
+                </div>
+                <div class="txt">
+                    <h3>專業教室</h3>
+                    <p><span>HACCP認證設備</span><br>快樂捏陶時，也不忘保護你們的安全，備有SOP規劃安全級別認證設施，符合國家要求之逃生設備，放心玩樂不受限！</p>
+                </div>
+            </div>
+            <div class="item-carousel">
+                <div id="carousel">
+                    <ul>
+                        <li><img src="../images/raiders/ceramics/ceramics杯1.jpg"></li>
+                        <li><img src="../images/raiders/ceramics/ceramics碟子1.jpg"></li>
+                        <li><img src="../images/raiders/ceramics/ceramics碟子2.jpg"></li>
+                        <li><img src="../images/raiders/ceramics/ceramics花瓶1.jpg"></li>
+                        <li><img src="../images/raiders/ceramics/ceramics花瓶2.jpg"></li>
+                        <li><img src="../images/raiders/ceramics/ceramics碗1.jpg"></li>
+                    </ul>
+                </div>
+                <div class="icon-move1"><i class="fas fa-paint-brush"></i></div>
+                <div class="icon-move2"><i class="fas fa-palette"></i></div>
+                <canvas id="canvas" width="640" height="300"></canvas>
+            </div>
+        </div>
+        <!-- 課程資訊 -->
+        <div class="wrap-class">
+            <div class="item-class">
+                <div class="classTxt">
+                    <h5>課程資訊</h5>
+                    <p>與孩子們互相學習！教導孩子們在工作坊中該注意的安全守則以及危險性！<br>
+                    一起製作有趣又實用的陶藝作品！大膽的感受泥巴那溫潤的獨特觸感吧！<br>
+                    <br>
+                    注意事項：<br>
+                    <span>1 . </span>如需進行課程預約，請直接點選下方"我要報名"按鈕。 <br>
+                    <span>2 . </span>課程提供親子圍裙( 2 位成人及 1 位孩童)，如有其他需求請另行告知。<br>
+                    <span>3 . </span>請務必準時抵達教室，避免大家的權益受損，有任何問題請直接來電。<br>
+                    <span>4 . </span>最低開課人數為 5 位孩童，最高上限為 8 位孩童，未達人數則不予開課。<br></p>
+                    <br>
+                    <h6>主辦方有權益更改開課內容，<br>此課程規劃為親子活動，家長需全程陪同。</h6><br>
+                    <img src="../images/raiders/base/Notice.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <!-- 三大保證 -->
+    <div class="ensure-banner">
+        <div class="ensure">
+            <h2>三大保證</h2>
+            <p>小牧跟你打勾勾</p>
+        </div>
+        <div class="wrap">
+            <div class="item">
+                <div class="icon">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="txt">
+                    <h3>適合全家一起來</h3>
+                    <p>超級大家庭也沒問題!</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="far fa-thumbs-up"></i>
+                </div>
+                <div class="txt">
+                    <h3>來過都說讚</h3>
+                    <p>我也覺得很讚!</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icon">
+                    <i class="fas fa-battery-full"></i>
+                </div>
+                <div class="txt">
+                    <h3>補充能量</h3>
+                    <p>許多動物哞哞哞!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------footer區==================== -->
+    <div class="main-footer">
+        <!-- 主要控制 -->
+        <div class="container">
+            <div class="footer-item">
+                <nav>
+                    <a href="./index.html">首頁</a>
+                    <a href="./about.html">關於小牧</a>
+                    <a href="./latestnews.html">最新消息</a>
+                    <a href="./contact_problem.html">常見問題</a>
+                    <a href="./contact.html">聯絡我們</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <nav>
+                    <a href="./park.html">園區資料</a>
+                    <a href="./park_introduction.html">園區介紹</a>
+                    <a href="./park_way.html">交通資訊</a>
+                </nav>
+            </div>
+            <div class="footer-item">
+                <nav>
+                    <a href="./raiders.html">牧場攻略</a>
+                    <a href="./raiders_p.html">烘焙坊</a>
+                    <a href="./raiders_t.html">捏陶趣</a>
+                    <a href="#">小小農夫</a>
+                    <a href="#">高低探索</a>
+                    <a href="#">星空夜宿</a>
+                    <a href="#">必買伴手禮</a>
+                </nav>
+            </div>
+            <div class="footer-item footer-subs">
+                <h4>訂閱電子報</h4>
+                <form>
+                    <input type="text" name="">
+                    <input type="submit" value="訂閱">
+                </form>
+            </div>
+        </div>
+        <div class="conpyright">
+            &copy; copyright 2021 by tibame_CFD104_12_tsai-chen
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,122 +1,3 @@
-@import url("http://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: 'Noto Sans TC', sans-serif;
-} 
-*{
-    margin: 0;
-    padding: 0;
-}
-html,body{
-    height: 100%;
-}
-body{
-    /* padding-top: 70px; */
-    background-image: url(../../images/body_bg.png);
-    background-repeat: repeat-y;
-    background-position:right;
-    background-attachment:fixed
-    /* 固定背景 */
-}
-
-
-/* 背景跟選單 */
-.header-bg{
-    width: 1200px;
-    display: flex;
-    margin: auto;
-}
-.header-bg img{
-    width: 100%;
-}
-
-/* logo */
-.header .logo{
-    display: block;
-    margin-left: 5%;
-}
-.header .logo img{
-    width: 100px;;
-}
-
-
-
-/* header區 */
-.header{
-    width: 1200px;
-}
-.header .container{
-    display: flex;
-    padding: 6px 10px;
-    background-color: #82cddb;
-    width: 940px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50px;
-    margin-top: 10px;
-    z-index: 999;
-    box-shadow:0px 2px 2px #daf9ff;
-}
-
-
-
-/* header選單區 */
-/* 下拉式選單 */
-.header nav{
-    display: inline-block;
-    text-align: right;
-    font-size: 0;
-    position: absolute;
-    left: 450px;
-}
-.header nav a{
-    display: inline-block;
-    color: #6f7ea2;
-    text-decoration: none;
-    font-size: 16px;
-    /* 選單置中 */
-    line-height: 41px;
-    width: 80px;
-    padding: 0 10px;
-    transition: .5s;
-    font-weight: 900;
-
-}
-.header nav a:hover{
-    color: #fff;
-
-}
-.header-nav li {
-    white-space: nowrap;
-    background-color: #82cddb;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.header-nav>li:last-child {
-    border-right: 25px;
-}
-.header-nav > li{
-    float: left;
-    /* 只有第一層是靠左對齊*/
-}
-.header-nav ul{
-    /*隱藏次選單*/
-    display: none;
-}
-
-.header-nav li:hover > ul{
-    /* 滑鼠滑入展開次選單*/
-    display: block;
-}
-
 
 /* 麵包屑.path */
 .path-wrap{
@@ -133,11 +14,14 @@ body{
 .path li{
     position: relative;
     padding: 0 20px;
+    width: 70px;
+    text-align: center;
 }
 .path li a{
     color: #6f7ea2;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 500;
 }
 .path li + li::before{
     /* 偽類 */
@@ -148,6 +32,8 @@ body{
 }
 .path a:hover, .breadcrumb li:last-child a{
     color: #fff;
+        font-size: 16px;
+        font-weight: 600;
 }
 .path li:after{
     content: '';
@@ -155,7 +41,7 @@ body{
     width: 0%;
     height: 1.5em;
     margin: 5px 0;
-    background-color: #f19dae;
+    background-color: #fbca4d;
     transition: width .5s ;
     position: absolute;
     top: -8px;
@@ -175,16 +61,15 @@ body{
 
 
 
-
-
-/* park_introduction */
-/* 園區介紹 */
-.introduction-banner{
+/* 園區介紹============================================================ */
+/* 工作人員 */
+.personnel-banner{
     width: 960px;
     margin: auto;
-    padding: 40px 0 60px;
+    padding: 20px 0;
 }
-.introduction-banner .introduction > h2{
+
+.personnel-banner .personnel > h2{
     width: 960px;
     font-size: 42px;
     text-align: center;
@@ -194,7 +79,605 @@ body{
     color: #6f7ea2;
 }
 
-.introduction-banner .introduction > p{
+.personnel-banner .personnel > p{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
+    color: #6f7ea2;
+}
+.personnel-wrap{
+    height: 350px;
+    display: flex;
+    align-items: center;
+
+}
+.personnel-container{
+    width: 940px;
+    margin: auto;
+    display: flex;
+}
+.personnel-item{
+    width: 300px;
+    margin: 0 10px;
+    display: flex;
+    background-color: rgba(241, 195, 70, 0.3);
+    /* 陰影 */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    font-family: 'Noto Sans TC', sans-serif;
+    border-radius: 25px;
+}
+.personnel-item .pic{
+    width: 50%;
+}
+.personnel-item .pic img{
+    width: 100%;
+    height: 100%;
+    /* 圖片變形可使用 */
+    object-fit: cover;
+}
+.personnel-item .txt{
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    line-height:70px;
+}
+.personnel-item .txt h3{
+    /* 與p之間的距離 */
+    padding-bottom: .3em;
+    margin-bottom: .4em;
+    /* 字體粗細 */
+    font-weight: 700;
+    color: #6f7ea2;
+    font-size: 28px;
+    text-align: center;
+    border-bottom: 4px solid #fbca4d;
+
+}
+.personnel-item .txt p span{
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 18px;
+    color: #6f7ea2;
+
+}
+.personnel-item .txt p{
+    line-height: 1.5;
+    font-weight: 300;
+    color: #6f7ea2;
+    text-align: left;
+}
+
+
+/* 園區介紹-內容 */
+.content-banner{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.content-banner .content > h2{
+    width: 960px;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    font-weight: 900;
+    color: #6f7ea2;
+}
+
+.content-banner .content > p{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
+    color: #6f7ea2;
+}
+.content-wrap{
+    width: 960px;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.content-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+
+.content-item{
+    width: 220px;
+    margin-left: 10px;
+}
+.content-txt{
+    width: 600px;
+    background-color: rgba(128, 197, 210, .5);
+    padding: 50px;
+    margin: 0 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    font-family: 'Noto Sans TC', sans-serif;
+    border-radius: 50px;
+    text-align: left;
+    line-height: 1.5em;
+}
+.content-pic{
+    width: 200px;
+    color: #fff;
+    position: sticky;
+    top: 90px;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(241, 195, 70, 0.3);
+    /* 陰影 */
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 25px;
+}
+.content-pic .pic-icon{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.content-pic .pic-icon img{
+    width: 70%;
+    /* 圖片變形可使用 */
+    object-fit: cover;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.content-pic .pic{
+    width: 70%;
+    text-align: center;
+}
+.content-pic .pic img{
+    width: 100%;
+    height: 100%;
+    /* 圖片變形可使用 */
+    object-fit: cover;
+    position: relative;
+} 
+.content-pic .pic h3{
+    font-weight: 700;
+    color: #6f7ea2;
+    font-size: 28px;
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+}
+
+
+
+/* icon cheaked跳出 */
+#chatBox{
+    display: none;
+}
+html .chatBox-group{
+    background-color: rgba(255, 255, 255, .5);
+    position: fixed;
+    z-index: 51;
+    /* 要大於 header nav:z-index: 50; */
+}
+.chatBox-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dialogue{
+    width: 450px;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 60px #ddd;
+    /* 毛玻璃 */
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+.dialogue i{
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #6f7ea2;
+}
+.dialogue i:hover{
+    font-size: 26px;
+    color: #fbca4d;
+}
+.user{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    font-family: tahoma;
+}
+.local{
+    justify-content: flex-end;
+}
+.user .avatar{
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+.user .pic{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user .pic img{
+    width: 100%;
+    /* 拿掉基線 */
+    vertical-align: middle;
+}
+.user .avatar .name{
+    font-family: tahoma;
+    font-weight: 550;
+    color: #6f7ea2;
+}
+.user .txt{
+    background-color: #ccc;
+    padding: 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    line-height: 1.3em;
+}
+.remote .txt{
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color: #fff;
+    color: #6f7ea2;
+
+
+}
+.remote .txt span{
+    color: #bbb;
+    font-size: 14px;
+}
+.local .txt{
+    margin-right: 20px;
+    margin-left: 80px;
+    /* 順序 */
+    order: -1;
+    background-color: #82cddb;
+    color: #fff;
+}
+.remote .txt::before,.local .txt::before{
+    content: '';
+    position: absolute;
+    top: 15px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.remote .txt::before{
+    border-right: 10px solid #fff;
+    left: -10px;
+}
+.local .txt::before{
+    border-left: 10px solid #82cddb;
+    right: -10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 園區動物============================================================ */
+/* 介紹動物 */
+.introduce-banner{
+    width: 960px;
+    margin: auto;
+    padding: 40px 0 0px;
+}
+.introduce-banner .introduce > h2{
+    width: 960px;
+    font-size: 42px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    color: #6f7ea2;
+}
+
+.introduce-banner .introduce > h4{
+    width: 100%;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #6f7ea2;
+
+}
+
+.introduce-banner .wrap{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.introduce-banner .container-cow{
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0 0 20px #ccc;
+    overflow: hidden;
+    background-image: url(../../images/about/about-cow.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position:100px 30px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.introduce-banner .container-monkey{
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0 0 20px #ccc;
+    overflow: hidden;
+    background-image: url(../../images/about/about-monky2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position:100px 30px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.introduce-banner .container-mouse{
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    box-shadow: 0 0 20px #ccc;
+    overflow: hidden;
+    background-image: url(../../images/about/about-mouse2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position:100px 30px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+
+.introduce-banner .wrap h3{
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-size: 180px;
+    padding-left: 15px;
+    color: #6f7ea2;
+    opacity: .3;
+    position: absolute;
+    left:-10px;
+    top: -10px;
+    line-height: 1em;
+}
+.introduce-banner .txt{
+    width: 400px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 1.5em;
+
+
+}
+.introduce-banner .container .txt p{
+    margin-bottom: 1em;
+}
+
+
+/* 每日任務 */
+.daily-banner{
+    width: 960px;
+    margin: auto;
+    padding: 40px 0 60px;
+}
+.daily-banner .daily{
+    margin-bottom: 30px;
+}
+.daily-banner .daily > h2{
+    width: 960px;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    font-weight: 900;
+    color: #6f7ea2;
+}
+
+.daily-banner .daily > p{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
+    color: #6f7ea2;
+}
+
+
+.daily-banner .wrap{
+    width: 960px;
+    margin: auto;
+}
+.daily-banner .item{
+    /* outline: 1px solid red; */
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.daily-banner .item h3{
+    font-size: 32px;
+    display: inline-block;
+    border-bottom: 4px solid #fbca4d;
+    margin-bottom: 30px;
+}
+.daily-banner .item p{
+    font-size: 18px;
+    line-height: 1.7;
+}
+.daily-banner .item .pic-img img{
+    width:90%;
+    vertical-align: top;
+    border-radius: 25px;
+}
+
+
+/* 垂直線 */
+.daily-banner .item:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #82cddb;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;       
+}
+/* 點點 */
+.daily-banner .item:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fbca4d;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;  
+}
+.daily-banner .item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.daily-banner .item .pic{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+.daily-banner .item:nth-child(odd) .pic{
+    padding-right: 20px;
+
+}
+.daily-banner .item:nth-child(odd) .pic-img {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left:78px;
+    width: 85%;
+}
+.daily-banner .item:nth-child(odd) .pic::before {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    content: '';
+    width: 40%;
+    height: 60%;
+    background-color: rgba(128, 197, 210, .5);
+    border-radius: 25px;
+}
+
+.daily-banner .item:nth-child(even) .pic{
+    padding-left: 20px;
+}
+.daily-banner .item:nth-child(even) .pic-img {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left:30px;
+    width: 85%;
+}
+.daily-banner .item:nth-child(even) .pic::before {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 40%;
+    height: 60%;
+    background-color: rgba(128, 197, 210, .5);
+    border-radius: 25px;
+
+}
+
+.daily-banner .item .txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.daily-banner .item h3{
+    padding-bottom: .3em;
+    margin-bottom: .4em;
+    /* 字體粗細 */
+    font-weight: 900;
+    color: #fbca4d;
+    font-size: 28px;
+}
+
+.daily-banner .item p{
+    line-height: 1.6;
+    font-weight: 500;
+    transition: .5s;
+    text-align: left;
+    color: #6f7ea2;
+    text-indent: 2em;
+}
+.daily-banner .item:nth-child(odd) .txt{
+    padding-left: 20px;
+}
+.daily-banner .item:nth-child(even) .txt{
+    padding-right: 20px;
+}
+
+
+
+
+/* 猜猜看 */
+.guess-banner-banner{
+    width: 960px;
+    margin: auto;
+    padding: 40px 0 60px;
+}
+.guess-banner .guess > h2{
+    width: 960px;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    font-weight: 900;
+    color: #6f7ea2;
+}
+
+.guess-banner .guess > h4{
     width: 960px;
     margin: auto;
     padding: 20px 0px 20px;
@@ -202,21 +685,229 @@ body{
     margin-bottom: 20px;
     color: #6f7ea2;
 }
-
-.introduction-banner .wrap{
+.guess-banner .spin-pictxt{
+    width: 100%;
+    /* background-color: #faa; */
+}
+.guess-banner .spin-pictxt ul{
     width: 960px;
+    margin: auto;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: -80px;
+}
+.guess-banner li{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    margin: 0 60px 30px;
+    position: relative;
+    border-radius: 15%;
+}
+.guess-banner .spin-pictxt img{
+    width: 100%;
+    border-radius: 15%;
+    transform: rotate(45deg);
+    opacity: .5;
+    transition: 1s;
+}
+.guess-banner .spin-pictxt img:hover{
+    opacity: 1;
+    transform: rotate(0deg);
+}
+.guess-banner p{
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: 1;
+    z-index: 1;
 
 }
-.introduction-banner .wrap img{
-    width: 80%;
-    display: block;
-    margin: auto;
-    margin-bottom: 50px;
+
+.guess-banner span{
+    color: #fff;
+    font-weight: 700;
+    font-size: 32px;
+    position: absolute;
+    width: 100;
+    height: 50px;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
 }
-.introduction-banner .wrap .txt{
+.guess-banner li:hover span{
+    display: block;
+
+    z-index: 2;
+}
+.guess-banner .spin-pictxt li:hover p{
+    z-index: -2;
+}
+.guess-banner li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15%;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border: #fff 2px dashed;
+    padding: 10px 10px;
+    transition: 1s;
+}
+.guess-banner li:nth-child(n+4){
+    left: 160px;
+}
+.guess-banner li:nth-child(n+7){
+    left: 0px;
+}
+.box1{background-color: #fbca4d;}
+.box2{background-color: #82cddb;}
+.box3{background-color: #f19dae;}
+.box4{background-color: #fbca4d;}
+.box5{background-color: #82cddb;outline: 2px dashed #fff ; }
+.box6{background-color: #f19dae;}
+.box7{background-color: #fbca4d;}
+.box8{background-color: #82cddb;outline: 2px dashed #fff ;}
+.box9{background-color: #f19dae;}
+
+.box1:hover{outline: 2px dashed #fbca4d ; background-color: transparent;}
+.box2:hover{outline: 2px dashed #82cddb ; background-color: transparent;}
+.box3:hover{outline: 2px dashed #f19dae ; background-color: transparent;}
+.box4:hover{outline: 2px dashed #fbca4d ; background-color: transparent;}
+.box5:hover{outline: 2px dashed #82cddb ; background-color: transparent;}
+.box6:hover{outline: 2px dashed #f19dae ; background-color: transparent;}
+.box7:hover{outline: 2px dashed #fbca4d ; background-color: transparent;}
+.box8:hover{outline: 2px dashed #82cddb ; background-color: transparent;}
+.box9:hover{outline: 2px dashed #f19dae ; background-color: transparent;}
+
+.box5::before{outline: 2px dashed #82cddb ;}
+.box8::before{background-color: #fff ;}
+.box1:hover::before{background-color: #fbca4d;}
+.box2:hover::before{background-color: #82cddb ;}
+.box3:hover::before{background-color: #f19dae ;}
+.box4:hover::before{background-color: #fbca4d;}
+.box5:hover::before{background-color: #82cddb;}
+.box6:hover::before{background-color: #f19dae ;}
+.box7:hover::before{background-color: #fbca4d;}
+.box8:hover::before{background-color: #82cddb ;}
+.box9:hover::before{background-color: #f19dae ;}
+
+.guess-banner li::before{
+    outline: none ;
+    z-index: -1;
+}
+
+
+
+/* 園區環境============================================================ */
+.surroundings-banner{
+    width: 960px;
+    margin: auto;
+    padding: 40px 0 60px;
+}
+.surroundings-banner .surroundings > h2{
+    width: 960px;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    font-weight: 900;
+    color: #6f7ea2;
+}
+
+.surroundings-banner .surroundings > p{
+    width: 960px;
+    margin: auto;
+    padding: 20px 0px 20px;
+    text-align: center;
     margin-bottom: 20px;
     color: #6f7ea2;
-    font-size: 12px;
+    line-height: 1.5em;
+}
+.surroundings-banner .masonry{
+    width: 960px;
+    /* 版面切成3 */
+    column-count: 3;
+    column-gap: 0;
+}
+.surroundings-banner .item{
+    padding: 20px 0px;
+    position: relative;
+}
+.surroundings-banner .item .card-container{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    /* 立體效果 */
+    perspective: 1000px;
+    margin: 20px 10px;
+}
+.surroundings-banner .item .cover, .back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 隱藏背面 */
+    backface-visibility: hidden;
+    /* 增加動畫效果 */
+    transition: transform .5s ease-in-out;
+    display: flex;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, .2);
+}
+.surroundings-banner .item img{
+    /* 因應item容器縮放大小 */
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.surroundings-banner .item .cover{
+    /* background-color: #fbca4d; */
+    transform: rotateY(0deg);
+}
+.surroundings-banner .item .card-container:hover .cover{
+    /* 翻轉 */
+    transform: rotateY(180deg);
+}
+.surroundings-banner .item .cover img{
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+}
+
+.surroundings-banner .item .back{
+    /* background-color: #82cddb; */
+    transform: rotateY(-180deg);
+    position: relative;
+}
+.surroundings-banner .item .card-container:hover .back{
+    transform: rotateY(0deg);
+    opacity: .5;
+}
+.surroundings-banner .card-container:hover .back img{
+    border-top-right-radius:50px;
+    border-bottom-left-radius:50px;
+    transform: rotateY(-180deg);
+}
+.surroundings-banner .item .back p{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    font-size: 36px;
 }
 
 
@@ -233,21 +924,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* park_way */
+/* 交通資訊============================================================ */
 /* 交通資訊 */
 .Way-banner{
     width: 960px;
@@ -282,27 +959,15 @@ body{
     box-sizing: border-box;
     height: 60px;
     padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #fff;
-    border: 2px solid #6f7ea2;
-    text-decoration: none;
-    overflow: hidden;
-    /* 動畫時間 */
-    /* transition: 屬性,轉換時間 延遲執行的時間 速度; */
-    transition:  1s ;
     display: inline-block;
-    height: 550px;
-    overflow: auto
 }
 .Way-banner .txt h3{
-    border-bottom: 1px solid #6f7ea2;
     padding-bottom: .3em;
     margin-bottom: .4em;
     /* 字體粗細 */
     font-weight: 900;
     color: #fbca4d;
     font-size: 18px;
-    transition: .4s;
 }
 .Way-banner .txt span{
     font-weight: 900;
@@ -312,13 +977,11 @@ body{
 
 .Way-banner .txt P{
     line-height: 1.5em;
+    padding-bottom: 3em;
     color: #6f7ea2;
     font-style: 18px;
     font-weight: 100;
     margin-bottom: 10px;
-}
-.Way-banner .txt img{
-    width: 100%;
 }
 .Way-banner .txt h4{
     border-bottom: 1px solid #6f7ea2;
@@ -332,107 +995,3 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* footer */
-.main-footer{
-    padding: 30px 0 0;
-    background:#82cddb;
-}
-.main-footer .container{
-    display: flex;
-    width: 1000px;
-    margin: auto;
-}
-.main-footer .footer-item{
-    width: 0;
-    flex-grow: 1;
-    margin: 0 20px;
-}
-.main-footer .footer-item h4{
-    font-style: 24px;
-    color: #6f7ea2;
-    margin-bottom: .5em;
-    padding-bottom: .5em;
-}
-.footer-item h4::before{
-    content: '';
-    width: 40px;
-    height: 2px;
-
-}
-.main-footer .footer-item nav{
-    display: flex;
-    flex-direction: column;
-}
-.main-footer .footer-item nav a{
-    color: #6f7ea2;
-    line-height: 1.4;
-    text-decoration: none;
-    padding: 5px 0;
-}
-.main-footer .footer-item nav a:hover{
-    color: #fff;
-}
-.main-footer .footer-subs{
-    display: flex;
-    flex-direction: column;
-}
-.main-footer .footer-subs form{
-    display: flex;
-    width: 100%;
-    margin: auto 0px;
-}
-.main-footer .footer-subs input[type="text"], .footer-subs input    [type="submit"]{
-    bottom: none;
-    padding: 5px 10px;
-}
-.main-footer .footer-subs input[type="text"]{
-    width: 0;
-    flex-grow: 1;
-    border-radius: 25px;
-    margin-right: 10px;
-}
-.main-footer .footer-subs input[type="submit"]{
-    color: #fff;
-    background-color: #f19dae;
-}
-
-.main-footer .conpyright{
-    width: 100%;
-    margin: 50px 0 0;
-    text-align: center;
-    background-color: #fbca4d;
-    color: #d19b7b;
-    padding: 20px 0;
-}
-
-
-
-/* 裝飾線條 */
-.decorate{
-    position: relative;
-}
-.decorate .car{
-    position: absolute;
-    top: 1350px;
-    left: 10px;
-    right: 0;
-    bottom: 0px;
-    z-index: 1;
-    transform: rotate(-5deg);
-}
-.decorate .car img{
-    width: 20px;
-    height: 30px;
-}

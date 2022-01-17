@@ -1,131 +1,4 @@
-@import url("http://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap");
-
-*{
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-family: 'Noto Sans TC', sans-serif;
-} 
-*{
-    margin: 0;
-    padding: 0;
-}
-html,body{
-    height: 100%;
-}
-body{
-    /* padding-top: 70px; */
-    background-image: url(../../images/body_bg.png);
-    background-repeat: repeat-y;
-    background-position:right;
-    background-attachment:fixed
-    /* 固定背景 */
-}
-
-/* 背景跟選單 */
-.header-bg{
-    width: 1200px;
-    display: flex;
-    margin: auto;
-}
-.header-bg img{
-    width: 100%;
-}
-
-/* logo */
-.header .logo{
-    display: block;
-    margin-left: 5%;
-}
-.header .logo img{
-    width: 100px;;
-}
-
-
-
-/* header區 */
-.header{
-    width: 1200px;
-}
-.header .container{
-    display: flex;
-    padding: 6px 10px;
-    background-color: #82cddb;
-    width: 940px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50px;
-    margin-top: 10px;
-    z-index: 999;
-    box-shadow:0px 2px 2px #daf9ff;
-}
-
-
-
-/* header選單區 */
-/* 下拉式選單 */
-.header nav{
-    display: inline-block;
-    text-align: right;
-    font-size: 0;
-    position: absolute;
-    left: 450px;
-}
-.header nav a{
-    display: inline-block;
-    color: #6f7ea2;
-    text-decoration: none;
-    font-size: 16px;
-    /* 選單置中 */
-    line-height: 41px;
-    width: 80px;
-    padding: 0 10px;
-    transition: .5s;
-    font-weight: 900;
-
-}
-.header nav a:hover{
-    color: #fff;
-
-}
-.header-nav li {
-    white-space: nowrap;
-    background-color: #82cddb;
-    text-align: center;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-.header-nav input[type="checkbox"]:checked + span{
-    color: #fff;
-}
-.header-nav>li:last-child {
-    border-right: 25px;
-}
-.header-nav > li{
-    float: left;
-    /* 只有第一層是靠左對齊*/
-}
-.header-nav ul{
-    /*隱藏次選單*/
-    display: none;
-}
-
-.header-nav li:hover > ul{
-    /* 滑鼠滑入展開次選單*/
-    display: block;
-}
-
-
-
-
-
-
-
-
-/* 麵包屑.path */
+/* 麵包屑.path============================================ */
 .path-wrap{
     padding: 10px 0;
     background-color: #fff0;
@@ -140,12 +13,14 @@ body{
 .path li{
     position: relative;
     padding: 0 20px;
+    width: 70px;
+    text-align: center;
 }
 .path li a{
     color: #6f7ea2;
     text-decoration: none;
     font-size: 14px;
-
+    font-weight: 500;
 }
 .path li + li::before{
     /* 偽類 */
@@ -154,8 +29,10 @@ body{
     position: absolute;
     left: 0;
 }
-.path a:hover, .breadcrumb li:last-child a{
+.path a:hover{
     color: #fff;
+    font-size: 16px;
+    font-weight: 600;
 }
 .path li:after{
     content: '';
@@ -163,7 +40,7 @@ body{
     width: 0%;
     height: 1.5em;
     margin: 5px 0;
-    background-color: #f19dae;
+    background-color: #fbca4d;
     transition: width .5s ;
     position: absolute;
     top: -8px;
@@ -171,7 +48,6 @@ body{
     left: 15px;
     bottom: 0;
     z-index: -1;
-
 }
 .path li:hover::after{
     width: 75%;
@@ -179,31 +55,15 @@ body{
 
 
 
-/* 關於我們 */
+/* 新春報喜 */
 /* 固定寬的容器,且一定置中 */
 
-.about{
-    padding: 40px 0 60px;
-}
-.about .wrap{
+.happy-banner{
     width: 960px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
+    padding: 40px 0 60px;
 }
-.about .item{
-    width: 300px;
-    margin: 0 10px;
-    text-align: center;
-}
-.about .item img{
-    border-radius: 50%;
-    width: 100px;
-
-    /* 圓角 */
-}
-
-.about > h2{
+.happy-banner .happy > h2{
     width: 960px;
     font-size: 42px;
     text-align: center;
@@ -211,14 +71,77 @@ body{
     margin: auto;
     font-weight: 900;
     color: #6f7ea2;
+    font-family: tahoma;
 }
-.about > p{
+
+.happy-banner .happy > p{
     width: 960px;
     margin: auto;
     padding: 20px 0px 20px;
     text-align: center;
     color: #6f7ea2;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: tahoma;
+}
+
+.happy-banner .happy-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.happy-banner .container{
+    perspective: 30rem;
+}
+.happy-banner .container .happy-txt{
+font-size: 6rem;
+font-family:Helvetica;
+}
+.happy-banner .container > div{
+    display: block;
+    height: 6rem;
+    font-size: 6rem;
+    overflow: hidden;
+}
+.happy-banner .container > div > span{
+    display: block;
+    height: 6rem;
+    font-weight: bold;
+    letter-spacing: -.2rem;
+    text-align: center;
+    transition: .5s transform ease-in-out;
+}
+.happy-banner .container:hover > div > span {
+    transform: translateY(-100%);
+}
+.happy-banner .container > div:nth-child(1){
+    background-color: rgba(0, 0, 0 , .02);
+    transform: rotateX(30deg);
+}
+.happy-banner .container > div:nth-child(2){
+    background-color: rgba(0, 0, 0 , .08);
+    transform: translateY(-.5rem) rotateX(-30deg);
+}
+.happy-banner .container > div:nth-child(3){
+    background-color: rgba(0, 0, 0 , .02);
+    transform: translateY(-1rem) rotateX(30deg);
+}
+.happy-banner .container > div:nth-child(4){
+    background-color: rgba(0, 0, 0 , .08);
+    transform: translateY(-1.5rem) rotateX(-30deg);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.happy-banner .container > div:nth-child(odd){
+    color: #82cddb;
+}
+.happy-banner .container > div:nth-child(even){
+    color: #fbca4d;
+}
+.happy-banner .container:hover > div:nth-child(odd){
+    color: #fbca4d;
+}
+.happy-banner .container:hover > div:nth-child(even){
+    color: #82cddb;
 }
 
 
@@ -249,12 +172,8 @@ body{
     text-align: center;
     color: #6f7ea2;
     margin-bottom: 10px;
+    font-family: tahoma;
 }
-/* .home-banner body{
-    display: flex;
-    align-items: center;
-    background-color: #faa;
-} */
 .raiders-banner .wrap{
     width: 100%;
     display: flex;
@@ -272,7 +191,6 @@ body{
     box-sizing: border-box;
     margin-bottom: 5%;
     border-radius: 25px;
-    transition: .5s;
 
 }
 .raiders-banner .item img{
@@ -308,7 +226,6 @@ background-color: #fbca4d;
     position: relative;
     color: #6f7ea2;
     border-radius: 25px;
-    transition: .5s;
 }
 .raiders-banner .item .txt span{
     font-size: 18px;
@@ -461,9 +378,9 @@ background-color: #fbca4d;
     margin-bottom: 10px;
 }
 .latestnews-banner .item .txt a{
-    line-height: 1em;
-    border: 1px solid #f19dae;
-    padding: 0 1em;
+    line-height: 30px;
+    border: 2px solid #f19dae;
+    padding: 0 15px;
     align-self: flex-end;
     /* 底線拿掉 */
     text-decoration: none;
@@ -473,8 +390,10 @@ background-color: #fbca4d;
     color: #f19dae;
     background-color: #fff;
     box-shadow:0px 0px 3px #f19dae;
+    font-family: tahoma;
 }
 .latestnews-banner .item .txt a:hover{
+    border: 2px solid #ffff;
     background-color: #f19dae;
     color: #fff;
 }
@@ -529,28 +448,20 @@ background-color: #fbca4d;
     transition:  1s ;
     display: inline-block;
 }
-.problem-banner .txt:hover{
-    overflow: auto;
-}
 .problem-banner .txt:hover:nth-child(1){
-    height: 400px;
-    overflow: auto
+    height: 700px;
 }
 .problem-banner .txt:hover:nth-child(2){
-    height: 400px;
-    overflow: auto
+    height: 1300px;
 }
 .problem-banner .txt:hover:nth-child(3){
     height: 150px;
-    overflow: auto
 }
 .problem-banner .txt:hover:nth-child(4){
-    height: 160px;
-    overflow: auto
+    height: 150px;
 }
 .problem-banner .txt:hover:nth-child(5){
-    height: 400px;
-    overflow: auto
+    height: 950px;
 } 
 .problem-banner .txt h3{
     border-bottom: 1px solid #6f7ea2;
@@ -598,105 +509,25 @@ background-color: #fbca4d;
 
 
 
-
-
-
-
-
-
-/* footer */
-.main-footer{
-    padding: 30px 0 0;
-    background:#82cddb;
-}
-.main-footer .container{
-    display: flex;
-    width: 1000px;
-    margin: auto;
-}
-.main-footer .footer-item{
-    width: 0;
-    flex-grow: 1;
-    margin: 0 20px;
-}
-.main-footer .footer-item h4{
-    font-style: 24px;
-    color: #6f7ea2;
-    margin-bottom: .5em;
-    padding-bottom: .5em;
-}
-.footer-item h4::before{
-    content: '';
-    width: 40px;
-    height: 2px;
-
-}
-.main-footer .footer-item nav{
-    display: flex;
-    flex-direction: column;
-}
-.main-footer .footer-item nav a{
-    color: #6f7ea2;
-    line-height: 1.4;
-    text-decoration: none;
-    padding: 5px 0;
-}
-.main-footer .footer-item nav a:hover{
-    color: #fff;
-}
-.main-footer .footer-subs{
-    display: flex;
-    flex-direction: column;
-}
-.main-footer .footer-subs form{
-    display: flex;
-    width: 100%;
-    margin: auto 0px;
-}
-.main-footer .footer-subs input[type="text"], .footer-subs input    [type="submit"]{
-    bottom: none;
-    padding: 5px 10px;
-}
-.main-footer .footer-subs input[type="text"]{
-    width: 0;
-    flex-grow: 1;
-    border-radius: 25px;
-    margin-right: 10px;
-}
-.main-footer .footer-subs input[type="submit"]{
-    color: #fff;
-    background-color: #f19dae;
-}
-
-.main-footer .conpyright{
-    width: 100%;
-    margin: 50px 0 0;
-    text-align: center;
-    background-color: #fbca4d;
-    color: #d19b7b;
-    padding: 20px 0;
-}
-
-
-
-
 /* 裝飾線條 */
 .decorate{
     position: relative;
 }
 .decorate .pink-circle{
     position: absolute;
-    top: 2050px;
-    left: 200px;
+    top: 2400px;
+    left: 180px;
     right: 0;
     bottom: 0px;
     z-index: 1;
     transform: rotate(150deg);
+    opacity: .7;
 }
+
 .decorate .blue-circle{
     position: absolute;
     top: 1300px;
-    left: 1220px;
+    left: 1250px;
     right: 0px;
     bottom: 0px;
     z-index: 1;
@@ -711,4 +542,3 @@ background-color: #fbca4d;
     z-index: 1;
     transform: rotate(340deg);
 }
-

@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>小牧牧場~歡迎你~</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/page_css/index.css">
+    <!-- title頁面標籤icon -->
     <link rel="icon" href="../images/logo_icon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../images/logo_icon.ico" type="image/x-icon">
+    <!-- link -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/page_css/headerFooter.css">
+    <link rel="stylesheet" href="../css/page_css/index.css">
+    <script src="https://kit.fontawesome.com/3e93ba0ab0.js" crossorigin="anonymous"></script>
 </head>
 <!-- 裝飾的圖 -->
     <div class="decorate">
         <img src="../images/decorate/pink-circle.png" alt="" class="pink-circle">
         <img src="../images/decorate/blue-circle.png" alt="" class="blue-circle">
         <img src="../images/decorate/blue-triangle.png" alt="" class="blue-triangle">
+
     </div>
     <!-- 首頁頂圖片 -->
     <div class="header-bg">
@@ -31,23 +36,21 @@
             <!-- 選單 -->
             <nav>
                 <ul class="header-nav">
-                    <li>
-                        <a href="./about.html"><span>關於小牧</span></a></li>
-                    <li><a href="./park.html"><span>園區資訊</span></a>
+                    <li><a href="#"><span>園區資訊</span></a>
                         <ul>
-                            <li><a href="./park_introduction.html">園區介紹</a></li>
+                            <li><a href="./park_personnel.html">園區介紹</a></li>
                             <li><a href="./park_animal.html">園區動物</a></li>
+                            <li><a href="./park_surroundings.html">園區環境</a></li>
                             <li><a href="./park_way.html">交通資訊</a></li>
                         </ul>
                     </li>
                     <li><a href="./raiders.html"><span>牧場攻略</span></a>
                         <ul>
-                            <li><a href="./raiders_p.html">烘焙坊</a></li>
-                            <li><a href="./raiders_t.html">捏陶趣</a></li>
-                            <li><a href="#">小小農夫</a></li>
-                            <li><a href="#">高低探索</a></li>
-                            <li><a href="#">星空夜宿</a></li>
-                            <li><a href="#">必買伴手禮</a></li>
+                            <li><a href="./raiders_bread.html">烘焙坊</a></li>
+                            <li><a href="./raiders_ceramics.html">捏陶趣</a></li>
+                            <!-- <li><a href="#">小小農夫</a></li>
+                            <li><a href="#">高低探索</a></li> -->
+                            <li><a href="./raiders_star.html">星空夜宿</a></li>
                         </ul>
                     </li>
                     <li><a href="./latestnews.html"><span>最新消息</span></a></li>
@@ -70,39 +73,31 @@
     </div>
 
 
-    <!-- 關於我們 -->
-    <div class="about">
-        <h2>關於小牧</h2>
-        <p>可愛的動物們!陪你共度愉快的假日時光!</p>
-        <!-- 固定寬度.wrap -->
-        <div class="wrap">
-            <!-- 內容 -->
-            <div class="item">
-                <img src="../images/about/cow.jpg">
-                <h3>牛奶糖</h3>
-                </div>
-            <div class="item">
-                <img src="../images/about/pig.jpg">
-                <h3>豬太郎</h3>
-            </div>
-            <div class="item">
-                <img src="../images/about/monky.jpg">
-                <h3>猴晒雷</h3>
-            </div>
+    <!-- 新春報喜 -->
+    <div class="happy-banner">
+        <div class="happy">
+            <h2>新春報喜</h2>
+            <p>小牧祝大家寫code超順利～</p>
         </div>
-        <div class="wrap">
-            <!-- 內容 -->
-            <div class="item">
-                <img src="../images/about/rabbit.jpg">
-                <h3>兔大明</h3>
+        <!-- 固定寬度 -->
+        <div class="happy-group">
+            <div class="container">
+                <div class="happy-txt">
+                    <span>HAPPY</span>
+                    <span>TO CFD104</span>
                 </div>
-            <div class="item">
-                <img src="../images/about/cat.jpg">
-                <h3>貓小美</h3>
-            </div>
-            <div class="item">
-                <img src="../images/about/fox.jpg">
-                <h3>狐  適</h3>
+                <div class="happy-txt">
+                    <span>NEW</span>
+                    <span>EVERY</span>
+                </div>
+                <div class="happy-txt">
+                    <span>YEAR</span>
+                    <span>CLASSMATES</span>
+                </div>
+                <div class="happy-txt">
+                    <span>2022</span>
+                    <span>!!!</span>
+                </div>
             </div>
         </div>
     </div>
@@ -135,7 +130,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <a href="#" class="btn">
                     <img src="../images/raiders/farmer.jpg">
                     <div class="txt">
@@ -152,7 +147,7 @@
                         <p><span>小朋友快看！</span><br>整座牧場規劃了森林廣場、雨水花園、觀山大草原！各式的兒童遊樂設施外，還有大草皮可以野餐，大小家庭都適合來！讓孩子快樂奔跑~</p>
                     </div>
                 </a>
-            </div>
+            </div> -->
             <div class="item">
                 <a href="#" class="btn">
                     <img src="../images/raiders/star.jpg">
@@ -162,7 +157,7 @@
                     </div>
                 </a>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <a href="#" class="btn">
                     <img src="../images/raiders/Souvenir.jpg">
                     <div class="txt">
@@ -170,7 +165,7 @@
                         <p><span>每日的營養補充站</span><br>當日鮮乳！限量手工鮮奶饅頭！季節限定時蔬！地方特產都在這！快瞧瞧</p>
                     </div>
                 </a>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -187,7 +182,6 @@
         <div class="wrap">
             <div class="item">
                 <img src="../images/latestnews/merry.jpg">
-                <!-- 文字要蓋在圖片上,要用到絕對定位absolute -->
                 <div class="txt">
                     <h3>聖誕快閃禮包</h3>
                     <p><span>想不想要酷東西！</span><br>聖誕老公公快訊！只要完成園區內集點蓋章活動！<br>即贈 <u>小牧獨家商品！</u></p>
@@ -196,7 +190,6 @@
             </div>
             <div class="item">
                 <img src="../images/latestnews/2022.jpg">
-                <!-- 文字要蓋在圖片上,要用到絕對定位absolute -->
                 <div class="txt">
                     <h3>園區有老虎!</h3>
                     <p><span>2022年全品項８折優惠！</span><br>只要是虎年誕生的！大朋友小朋友！<br>快來小牧過新年～</p>
@@ -205,7 +198,6 @@
             </div>
             <div class="item">
                 <img src="../images/latestnews/virus.jpg">
-                <!-- 文字要蓋在圖片上,要用到絕對定位absolute -->
                 <div class="txt">
                     <h3>勤洗手戴口罩</h3>
                     <p><span>拍拍手舒緩計畫</span><br>與園區內的動物們拍照並上傳臉書！即贈每日限量鮮奶饅頭！</p>
@@ -214,7 +206,6 @@
             </div>
             <div class="item">
                 <img src="../images/latestnews/breakfast.jpg">
-                <!-- 文字要蓋在圖片上,要用到絕對定位absolute -->
                 <div class="txt">
                     <h3>爹娘早餐計畫</h3>
                     <p><span>為了爹娘好</span><br>替自己好好享用一頓早餐！<br>把健康打包給你，冷藏直送！新鮮吃得到！</p>
@@ -282,24 +273,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- -----------footer區==================== -->
     <div class="main-footer">
         <!-- 主要控制 -->
@@ -307,7 +280,6 @@
             <div class="footer-item">
                 <nav>
                     <a href="./index.html">首頁</a>
-                    <a href="./about.html">關於小牧</a>
                     <a href="./latestnews.html">最新消息</a>
                     <a href="./contact_problem.html">常見問題</a>
                     <a href="./contact.html">聯絡我們</a>
@@ -315,8 +287,9 @@
             </div>
             <div class="footer-item">
                 <nav>
-                    <a href="./park.html">園區資料</a>
-                    <a href="./park_introduction.html">園區介紹</a>
+                    <a href="#">園區資料</a>
+                    <a href="./park_personnel.html">園區介紹</a>
+                    <a href="./park_animal.html">園區動物</a>
                     <a href="./park_way.html">交通資訊</a>
                 </nav>
             </div>
@@ -340,7 +313,11 @@
             </div>
         </div>
         <div class="conpyright">
-            &copy; copyright 2021 by tibame_CFD104_12_tsai-chen
+            &copy; copyright 2021 by tsai-chen<br>
+        </div>
+        <div class="conpyright-bottom">
+            本網站為緯育TibaMe前端工程師CFD104學員專題作品，僅供作業展示用。
+            若有侵權請聯繫[TibaMe-前端設計工程師養成班]，將由專人協助處理。
         </div>
     </div>
 
