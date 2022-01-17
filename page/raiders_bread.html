@@ -143,23 +143,23 @@
             <div class="page-banner">
                 <div class="page-class">
                     <div class="icon">
-                        <i class="fas fa-times" onclick="signUpClose()" id="icon-right"></i>
+                        <i class="fas fa-times icon-right" onclick="signUpClose()" id=""></i>
                     </div>
                     <div class="item-class">
                         <div class="classTxt">
                             <h5>預約程序</h5>
                             <p>
-                            <span>Step:1.</span>詳閱客戶同意書及退課方式。<br>
+                            <span>Step:1.</span>詳閱客戶權益及退款程序。<br>
                             <span>Step:2.</span>點選您喜愛的課程。 <br>
                             <span>Step:3.</span>勾選課程時間及日期。<br>
                             <span>Step:4.</span>輸入相關報名資料。<br>
-                            <span>Step:5.</span>完成預約。<br></p>
-                            <br>
+                            <span>Step:5.</span>完成預約。<br>
+                            </p><br>
                             <h6>感謝您的點選！<br>請跟著小牧一步步完成預約吧！<br></h6>
                         </div>
                     </div>
                     <div class="icon">
-                        <i class="fas fa-arrow-right" onclick="signUpNext()"id="icon-right"></i>
+                        <i class="fas fa-arrow-right icon-right" onclick="signUpNext()"id=""></i>
                     </div>
                 </div>
             </div>
@@ -176,30 +176,35 @@
     </div>
 
 
-    <!-- 報名page2 -->
+    <!-- 客戶權益 -->
     <div id="signNext">
         <div class="signUpBox-group" >
             <div class="page-banner">
-                <div class="page-class">
+                <div class="page-class page1">
                     <div class="icon">
-                        <i class="fas fa-times" onclick="signUpClose()"id="icon-right"></i>
-                        <i class="fas fa-arrow-left" onclick="signUpExNext()" id="icon-left"></i>
+                        <i class="fas fa-times icon-right" onclick="signUpClose()"id=""></i>
                     </div>
                     <div class="item-class">
-                        <div class="classTxt">
-                            <h5>預約程序</h5>
+                        <div class="classTxt step1">
+                            <h5><span>Step:1.</span>客戶權益及退款程序</h5>
+                            <h6>為維護您的個人權益及退款作業程序，請詳細閱讀以下退款標準：</h6>
                             <p>
-                            <span>Step:1.</span>詳閱客戶同意書及退課方式。<br>
-                            <span>Step:2.</span>點選您喜愛的課程。 <br>
-                            <span>Step:3.</span>勾選課程時間及日期。<br>
-                            <span>Step:4.</span>輸入相關報名資料。<br>
-                            <span>Step:5.</span>完成預約。<br></p>
-                            <br>
-                            <h6>感謝您的點選！<br>請跟著小牧一步步完成預約吧！<br></h6>
+                            活動日前 7 天申請退費者，扣除轉帳手續費30元外，其餘全數歸還。<br>
+                            活動日前 1 天至 7 天內申請退款者，須扣除活動相關支出，僅歸還七成費用。<br>
+                            活動當天除天災意外或不可抗力之因素，須提出證明，其餘則不予申請退款。<br><br>
+                            團體報名退款程序：<br>
+                            活動日前 7 天申請退費者，扣除轉帳手續費30元外，其餘全數歸還。<br>
+                            10人(含)以上團體報名可享八折優惠，如因其一申請退款，以致無法達優惠條件，其餘團報者須補其差額。<br></p>
+                            
+                            <h6>提醒您</h6>
+                            <p>
+                                1.退款申請作業時間約 7 ~ 14 天 (假日未含)，敬請耐心等候!!<br>
+                                2.申請退費日依據為"收到電子信箱時間"為準。</p>
                         </div>
                     </div>
                     <div class="icon">
-                        <i class="fas fa-arrow-right" onclick="signUpNext()"id="icon-right"></i>
+                        <i class="fas fa-arrow-right icon-right" onclick="signClass()"id=""></i>
+                        <i class="fas fa-arrow-left icon-left" onclick="backOpen()" id=""></i>
                     </div>
                 </div>
             </div>
@@ -211,6 +216,106 @@
                 <div class="drop"></div>
                 <div class="collection"></div>
                 <span>20%</span>
+            </div>
+        </div>
+    </div>
+    <!-- 點選課程 -->
+    <div id="signClass">
+        <div class="signUpBox-group" >
+            <div class="page-banner">
+                <div class="page-class page1">
+                    <div class="icon">
+                        <i class="fas fa-times icon-right" onclick="signUpClose()"id=""></i>
+                    </div>
+                    <div class="item-class">
+                        <div class="classTxt">
+                            <h5><span>Step2.</span>選擇課程</h5>
+                        </div>
+                    </div>
+                    <div class="Class-wrap">
+                        <div class="Class-container">
+                            <div class="Class-item" onclick="clickClass1()">
+                                <img src="../images/raiders/bread/bread-餅乾2.jpg"  id="clickClass1">
+                                <div class="txt">
+                                    <span>營養餅乾</span>
+                                    <p>難度
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Class-item" onclick="clickClass2()">
+                                <img src="../images/raiders/bread/bread-麵包2.jpg" id="clickClass2">
+                                <div class="txt">
+                                    <span>健康麵包</span>
+                                    <p>難度
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="Class-item" onclick="clickClass3()">
+                                <img src="../images/raiders/bread/bread-蛋糕2.jpg" id="clickClass3">
+                                <div class="txt">
+                                    <span>精緻蛋糕</span>
+                                    <p>難度
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-right icon-right" onclick="signTime()"id="iconNext"></i>
+                        <i class="fas fa-arrow-left icon-left" onclick="BackNext()" id=""></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule-group" id="drop40">
+            <div class="schedule">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="collection"></div>
+                <span>40%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 點選時間 -->
+    <div id="signTime">
+        <div class="signUpBox-group" >
+            <div class="page-banner">
+                <div class="page-class page1">
+                    <div class="icon">
+                        <i class="fas fa-times icon-right" onclick="signUpClose()"id=""></i>
+                    </div>
+                    <div class="item-class">
+                        <div class="classTxt">
+                            <h5><span>Step3.</span>選擇日期</h5>
+                        </div>
+                    </div>
+                    <div class="Class-wrap">
+                        <div class="Class-container">
+
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-right icon-right" onclick="signData()"id="iconNext"></i>
+                        <i class="fas fa-arrow-left icon-left" onclick="BackClass()" id=""></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="schedule-group" id="drop60">
+            <div class="schedule">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="collection"></div>
+                <span>60%</span>
             </div>
         </div>
     </div>

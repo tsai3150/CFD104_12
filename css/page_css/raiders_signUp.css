@@ -60,6 +60,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+/* icon */
 .signUpBox-group .icon{
     height: 30px;
     position: relative;
@@ -73,13 +74,15 @@
     font-size: 26px;
     color: #fbca4d;
 }
-.signUpBox-group #icon-left{
+.signUpBox-group .icon-left{
     float: left;
 }
-.signUpBox-group #icon-right{
+.signUpBox-group .icon-right{
     float: right;
 }
-
+.signUpBox-group .icon #iconNext{
+    display: none;
+}
 /* 內文 */
 .page-banner .page-class{
     width: 540px;
@@ -89,7 +92,7 @@
     /* 毛玻璃 */
     backdrop-filter: blur(5px);
     /* display: flex; */
-    padding: 30px 30px 40px 30px;
+    padding: 30px;
     box-sizing: border-box;
     /* flex-wrap: wrap; */
 }
@@ -116,7 +119,7 @@
     transition: .6s;
     text-align: center;
     line-height: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
 }
 .page-banner .item-class .classTxt h5:after{
     content: '';
@@ -149,8 +152,143 @@
 }
 
 
-/* page====================================== */
+/* 客戶權益====================================== */
 #signNext{
+    display: none;
+}
+.page-banner .page1{
+    width: 960px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0   0   60px #ddd;
+    /* 毛玻璃 */
+    backdrop-filter: blur(5px);
+    padding: 30px 30px 40px 30px;
+    box-sizing: border-box;
+}
+.page-banner .item-class .step1 p{
+    /* line-height: 1.5em; */
+    color: #6f7ea2;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 1em;
+}
+
+.page-banner .item-class .step1 h6{
+    color: #fbca4d;
+    font-size: 18px;
+    letter-spacing: .2em;
+    margin-bottom: .5em;
+}
+/* 點選課程====================================== */
+#signClass{
+    display: none;
+}
+.page-banner .page1{
+    width: 800px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0   0   60px #ddd;
+    /* 毛玻璃 */
+    backdrop-filter: blur(5px);
+    padding: 30px 30px 40px 30px;
+    box-sizing: border-box;
+}
+.page-banner .item-class .step1 p{
+    /* line-height: 1.5em; */
+    color: #6f7ea2;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-left: 1em;
+}
+
+.page-banner .item-class .step1 h6{
+    color: #fbca4d;
+    font-size: 18px;
+    letter-spacing: .2em;
+    margin-bottom: .5em;
+}
+.Class-wrap{
+    height: 240px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+
+}
+.Class-container{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.Class-item{
+    width: 220px;
+    height: 220px;
+    margin: 0 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.Class-item img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    transition: .5s;
+    opacity: 1;
+
+}
+.Class-item:hover img{
+    border-radius: 50px;
+    opacity: .6;
+}
+.Class-item .txt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.Class-item:hover .txt{
+    opacity: .8;
+}
+.Class-item .txt span{
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+}
+.Class-item .txt span:after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #fff;
+    transition: width .5s .5s;
+}
+.Class-item .txt:hover  span:after{
+    width: 100%;
+}
+.Class-item .txt p{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+}
+
+/* 點選時間==================== */
+#signTime{
     /* display: none; */
 }
 
@@ -166,13 +304,8 @@
 
 
 
-
-
-
-
-
 /* 進度顯示 ====================================*/
-#drop0 , #drop20{
+#drop0 , #drop20, #drop40, #drop60{
     display: none;
 }
 html .schedule-group{
