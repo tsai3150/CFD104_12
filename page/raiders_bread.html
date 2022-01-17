@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/page_css/headerFooter.css">
     <link rel="stylesheet" href="../css/page_css/raiders-base.css">
+    <link rel="stylesheet" href="../css/page_css/raiders_signUp.css">
     <script src="../js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/3e93ba0ab0.js" crossorigin="anonymous"></script>
     <script src="../js/page_js/raiders-base.js"></script>
@@ -134,113 +135,89 @@
                 <p>我要報名</p>
             </div>
         </div>
-        
-        <!-- 報名page1 -->
-        <div id="chatBox">
-            <div class="chatBox-group" >
-                <div class="dialogue">
-                    <i class="fas fa-times" onclick="signUpclose()"></i>
-                    <div class="user remote">
-                        <div class="avatar">
-                            <div class="pic">
-                                <img src="../images/park/personnel/chatBox1.jpg" alt="">
-                            </div>
-                            <div class="name">祖賢</div>
-                        </div>
-                        <div class="txt">
-                            您好~<br>我是活動組的祖賢~
+    </div>
+
+    <!-- 報名page1 -->
+    <div id="signUpBox">
+        <div class="signUpBox-group" >
+            <div class="page-banner">
+                <div class="page-class">
+                    <div class="icon">
+                        <i class="fas fa-times" onclick="signUpClose()" id="icon-right"></i>
+                    </div>
+                    <div class="item-class">
+                        <div class="classTxt">
+                            <h5>預約程序</h5>
+                            <p>
+                            <span>Step:1.</span>詳閱客戶同意書及退課方式。<br>
+                            <span>Step:2.</span>點選您喜愛的課程。 <br>
+                            <span>Step:3.</span>勾選課程時間及日期。<br>
+                            <span>Step:4.</span>輸入相關報名資料。<br>
+                            <span>Step:5.</span>完成預約。<br></p>
+                            <br>
+                            <h6>感謝您的點選！<br>請跟著小牧一步步完成預約吧！<br></h6>
                         </div>
                     </div>
-                    <div class="user local">
-                        <div class="avatar">
-                            <div class="pic">
-                                <img src="../images/park/personnel/chatBox0.jpg" alt="">
-                            </div>
-                            <div class="name">自己</div>
-                        </div>
-                        <div class="txt">
-                            請問過年有營業嗎?
-                        </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-right" onclick="signUpNext()"id="icon-right"></i>
                     </div>
-                    <div class="user remote">
-                        <div class="avatar">
-                            <div class="pic">
-                                <img src="../images/park/personnel/chatBox1.jpg" alt="">
-                            </div>
-                            <div class="name">祖賢</div>
-                        </div>
-                        <div class="txt">
-                            過年期間照常營業哦！
-                        </div>
-                    </div>
-                    <div class="user local">
-                        <div class="avatar">
-                            <div class="pic">
-                                <img src="../images/park/personnel/chatBox0.jpg" alt="">
-                            </div>
-                            <div class="name">自己</div>
-                        </div>
-                        <div class="txt">
-                            那要露營的話怎麼預約?<br>
-                            我找不到
-                        </div>
-                    </div>
-                    <div class="user remote">
-                        <div class="avatar">
-                            <div class="pic">
-                                <img src="../images/park/personnel/chatBox1.jpg" alt="">
-                            </div>
-                            <div class="name">祖賢</div>
-                        </div>
-                        <div class="txt">
-                            <span>輸入中...</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-arrow-right" onclick="signUpnext()"></i>
                 </div>
             </div>
         </div>
-        <!-- 開啟關閉 -->
-        <script>
-            function SignUpOpen() {
-                var t = document.getElementById('chatBox').style.display = 'block';
-            }
-            function signUpclose() {
-                var t = document.getElementById('chatBox').style.display = 'none';
-            }
-            function signUpcnext() {
-                var t = document.getElementById('chatBox').style.display = 'block';
-            }
-            function singUpclose() {
-                var t = document.getElementById('chatBox').style.display = 'none';
-            }
-        </script>
+        <div class="schedule-group" id="drop0">
+            <div class="schedule">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="collection"></div>
+                <span>0%</span>
+            </div>
+        </div>
+    </div>
 
-        <!-- 報名page2 -->
-        <div class="emil-class">
-            <div class="item-class">
-                <div class="classTxt">
-                    <h5>課程資訊</h5>
-                    <p>與孩子們互相學習！教導孩子們在廚房中該注意的安全守則以及危險性！<br>
-                    一起製作美味又用心的手工麵包！享受著充滿麵包香的下午吧！<br>
-                    <br>
-                    注意事項：<br>
-                    <span>1 . </span>如需進行課程預約，請直接點選下方"我要報名"按鈕。 <br>
-                    <span>2 . </span>課程提供親子圍裙( 2 位成人及 1 位孩童)，如有其他需求請另行告知。<br>
-                    <span>3 . </span>請務必準時抵達教室，避免大家的權益受損，有任何問題請直接來電。<br>
-                    <span>4 . </span>最低開課人數為 5 位孩童，最高上限為 8 位孩童，未達人數則不予開課。<br></p>
-                    <br>
-                    <h6>主辦方有權益更改開課內容，<br>此課程規劃為親子活動，家長需全程陪同。</h6><br>
-                    <img src="../images/raiders/base/Notice.jpeg" alt="">
+
+    <!-- 報名page2 -->
+    <div id="signNext">
+        <div class="signUpBox-group" >
+            <div class="page-banner">
+                <div class="page-class">
+                    <div class="icon">
+                        <i class="fas fa-times" onclick="signUpClose()"id="icon-right"></i>
+                        <i class="fas fa-arrow-left" onclick="signUpExNext()" id="icon-left"></i>
+                    </div>
+                    <div class="item-class">
+                        <div class="classTxt">
+                            <h5>預約程序</h5>
+                            <p>
+                            <span>Step:1.</span>詳閱客戶同意書及退課方式。<br>
+                            <span>Step:2.</span>點選您喜愛的課程。 <br>
+                            <span>Step:3.</span>勾選課程時間及日期。<br>
+                            <span>Step:4.</span>輸入相關報名資料。<br>
+                            <span>Step:5.</span>完成預約。<br></p>
+                            <br>
+                            <h6>感謝您的點選！<br>請跟著小牧一步步完成預約吧！<br></h6>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-arrow-right" onclick="signUpNext()"id="icon-right"></i>
+                    </div>
                 </div>
             </div>
         </div>
-    </div> 
-
+        <div class="schedule-group" id="drop20">
+            <div class="schedule">
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="drop"></div>
+                <div class="collection"></div>
+                <span>20%</span>
+            </div>
+        </div>
+    </div>
 
 
         <!-- 最後結束送出 -->
-        <div class="emil-class">
+        <!-- <div class="emil-class">
             <div class="item-class">
                 <div class="classTxt">
                     <h5>課程資訊</h5>
@@ -257,8 +234,9 @@
                     <img src="../images/raiders/base/Notice.jpeg" alt="">
                 </div>
             </div>
-        </div>
-    </div> 
+        </div> -->
+
+
 
 
     <!-- 三大保證 -->
@@ -297,14 +275,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-    
 
 
     <!-- -----------footer區==================== -->

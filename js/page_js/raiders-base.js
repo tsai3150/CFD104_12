@@ -22,3 +22,32 @@ function doFirst(){
     // context.clearRect(0, 0, canvas.width, canvas.height);
 }
 window.addEventListener('load',doFirst)
+
+//報名按鈕
+function SignUpOpen() {
+    var t = document.getElementById('signUpBox').style.display = 'block';
+    var t = document.getElementById('drop0').style.display = 'block';
+}
+function signUpClose() {
+    var t = document.getElementById('drop0').style.display = 'none';
+    var t = document.getElementById('drop20').style.display = 'none';
+    var t = document.getElementById('signUpBox').style.display = 'none';
+    var t = document.getElementById('signNext').style.display = 'none';
+}
+function signUpNext() {
+    var t = document.getElementById('drop0').style.display = 'none';
+    var t = document.getElementById('drop20').style.display = 'block';
+    var t = document.getElementById('signUpBox').style.display = 'none';
+    var t = document.getElementById('signNext').style.display = 'block';
+}
+
+function signUpExNext() {
+    var t = document.getElementById('drop0').style.display = 'block';
+    var t = document.getElementById('signUpBox').style.display = 'block';
+    var t = document.getElementById('signNext').style.display = 'none';
+}
+// function SignUpSend() {
+//     var t = document.getElementById('signNext').style.display = 'none';
+// }
+
+

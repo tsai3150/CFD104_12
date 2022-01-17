@@ -1,0 +1,259 @@
+
+
+
+/* 我要報名===================================== */
+/* btn */
+.signUp-btn{
+    width: 180px;
+    margin: auto;
+    border-radius: 50px;
+    border: 2px solid #f19dae;
+    text-align:center;
+    padding: 20px 0px;
+    box-shadow: 1px 1px 5px rgba(0 , 0, 0, .2);
+    background-color: #fff;
+    opacity: .7;
+    /* position: relative; */
+    cursor:pointer;
+    /* position: absolute; */
+    margin-bottom: 30px;
+}
+.signUp-btn .signUp{
+    line-height: 30px;
+    color: #f19dae;
+    font-family: tahoma;
+    font-weight: 900;
+    font-size: 24px;
+} 
+
+.signUp-btn:hover {
+    border: 2px solid #ffff;
+    background-color: #f19dae;
+}
+.signUp-btn:hover .signUp{
+    color: #fff;
+}
+
+
+/* 報名中================================= */
+/* step1:預約程序 */
+#signUpBox{
+    display: none;
+}
+ html .signUpBox-group{
+    background-color: rgba(255, 255, 255, .5);
+    position: fixed;
+    z-index: 51;
+    /* 要大於 header nav:z-index: 50; */
+}
+.signUpBox-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.signUpBox-group .icon{
+    height: 30px;
+    position: relative;
+}
+.signUpBox-group .icon i{
+    font-size: 24px;
+    cursor: pointer;
+    color: #6f7ea2;
+}
+.signUpBox-group .icon i:hover{
+    font-size: 26px;
+    color: #fbca4d;
+}
+.signUpBox-group #icon-left{
+    float: left;
+}
+.signUpBox-group #icon-right{
+    float: right;
+}
+
+/* 內文 */
+.page-banner .page-class{
+    width: 540px;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0   0   60px #ddd;
+    /* 毛玻璃 */
+    backdrop-filter: blur(5px);
+    /* display: flex; */
+    padding: 30px 30px 40px 30px;
+    box-sizing: border-box;
+    /* flex-wrap: wrap; */
+}
+.page-banner .item-class{
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.page-banner .item-class .classTxt{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    line-height: 1.5em;
+    position: relative;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.page-banner .item-class .classTxt h5{
+    width:100%;
+    font-size: 28px;
+    margin: auto;
+    font-weight: 500;
+    color: #fbca4d;
+    transition: .6s;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 1em;
+}
+.page-banner .item-class .classTxt h5:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 10px 0;
+    background-color: #fbca4d;
+    align-items: center;
+}
+.page-banner .item-class .classTxt p{
+    /* line-height: 1.5em; */
+    color: #6f7ea2;
+    line-height: 2em;
+    margin-bottom: 2em;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.page-banner .item-class .classTxt span{
+    font-size: 24px;
+    /* 文字外框 */
+    -webkit-text-stroke: 2px #fbca4d;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 3px;
+}
+.page-banner .item-class .classTxt h6{
+    color: #fbca4d;
+    font-size: 18px;
+    letter-spacing: .2em;
+}
+
+
+/* page====================================== */
+#signNext{
+    /* display: none; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 進度顯示 ====================================*/
+#drop0 , #drop20{
+    display: none;
+}
+html .schedule-group{
+    z-index: 51;
+    /* 要大於 header nav:z-index: 50; */
+}
+.schedule-group{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 100px;
+    right: 0;
+    width: 130px;
+}
+.schedule-group .schedule{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, .5);
+    min-height: 100vh;
+    /* 垂直排列 */
+    flex-direction: column;
+    /* 將對比拉高,讓原本drop設定的filter糊邊重新描繪 */
+    filter: contrast(30);
+    overflow: hidden;
+}
+.schedule-group .drop{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(20px);
+    opacity: 0;
+    /* linear線性速度,infinte重複動畫 */
+    animation: 2.5s drop linear infinite;
+}
+.schedule-group .drop:nth-child(2){
+    animation-delay: .5s;
+}
+.schedule-group .drop:nth-child(3){
+    animation-delay: .7s;
+}
+/* 收集水滴的容器 */
+.collection{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: 3s collection linear infinite;
+}
+.schedule-group span{
+    position: absolute;
+    font-family: Helvetica;
+    font-size: 30px;
+}
+@keyframes drop{
+    0%{
+        transform: scale(.7) translateY(-600%);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(.4) translateY(-80%);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(.3) translateY(0px);
+    }
+}
+@keyframes collection{
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.3) rotate(180deg);
+        width: 90px;
+        border-top-left-radius: 40%;
+        border-bottom-left-radius: 45%;
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
