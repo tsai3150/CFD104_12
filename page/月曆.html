@@ -28,16 +28,37 @@
             flex-flow: row wrap;
         }
         .month-list{
-
+            background-color: #6f7ea2;
+            color: #fff;
         }
-        .day-list{
-
+        .month-list li{
+            border: 1px solid #fff;
+            line-height: 30px;
         }
-        .month-list{
-
-        }
-        .day-list{
+        .day-list li{
+            background-color: #fff;
+            transform: scale(1);
+            color: #6f7ea2;
+            line-height: 30px;
             
+        }
+        .day-list li:nth-of-type(7n+1){
+            background-color: #82cddb;
+        }
+        .day-list li:nth-of-type(7n){
+            background-color: #82cddb;
+        }
+        .day-list li:hover{
+            transform: scale(1.2);
+            background-color: #f19dae;
+            z-index: 55;
+            cursor: pointer;
+            transition: .3s;
+            border-radius: 50px;
+            color: #fff;
+        }
+        .day-list li:empty{
+            background-color: transparent;
         }
     </style>
 </head>
@@ -53,6 +74,11 @@
             <li>六</li>
         </ul>
         <ul class="day-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
             <li>1</li>
             <li>2</li>
             <li>3</li>

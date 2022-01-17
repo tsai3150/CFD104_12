@@ -266,6 +266,9 @@ canvas{
 }
 
 /* 星空======================================== */
+.star{
+    padding-bottom: 0px;
+}
 .star-pic{
     display: flex;
     justify-content: center;
