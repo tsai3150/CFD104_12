@@ -88,13 +88,30 @@ function BackClass() {
 // 選擇課程=============================================
 function clickClass1(){
     var o = document.getElementById('clickClass1').style.border= '5px solid #82cddb';
+    var o = document.getElementById('clickClass2').style.border= 'none';
+    var o = document.getElementById('clickClass3').style.border= 'none';
     var btn = document.getElementById('iconNext').style.display = 'block';
+    var o = document.getElementById('clickAns1').style.display = 'block';
+    var o = document.getElementById('clickAns2').style.display = 'none';
+    var o = document.getElementById('clickAns3').style.display = 'none';
 } 
 function clickClass2(){
+    var o = document.getElementById('clickClass1').style.border= 'none';
     var o = document.getElementById('clickClass2').style.border= '5px solid #82cddb';
+    var o = document.getElementById('clickClass3').style.border= 'none';
     var btn = document.getElementById('iconNext').style.display = 'block';
+    var o = document.getElementById('clickAns1').style.display = 'none';
+    var o = document.getElementById('clickAns2').style.display = 'block';
+    var o = document.getElementById('clickAns3').style.display = 'none';
 }
 function clickClass3(){
+    
+    var o = document.getElementById('clickClass1').style.border= 'none';
     var o = document.getElementById('clickClass3').style.border= '5px solid #82cddb';
+    var o = document.getElementById('clickClass2').style.border= 'none';
     var btn = document.getElementById('iconNext').style.display = 'block';
+    var o = document.getElementById('clickAns1').style.display = 'none';
+    var o = document.getElementById('clickAns2').style.display = 'none';
+    var o = document.getElementById('clickAns3').style.display = 'block';
 }
+

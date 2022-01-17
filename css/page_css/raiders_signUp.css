@@ -39,6 +39,7 @@
 /* step1:預約程序 */
 #signUpBox{
     display: none;
+
 }
  html .signUpBox-group{
     background-color: rgba(255, 255, 255, .5);
@@ -214,32 +215,34 @@
 }
 .Class-wrap{
     height: 240px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
 
 }
 .Class-container{
-    width: 900px;
+    width: 800px;
     margin: auto;
     display: flex;
     justify-content: center;
 }
 .Class-item{
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     margin: 0 10px;
     font-family: 'Noto Sans TC', sans-serif;
     position: relative;
     cursor: pointer;
-
+    display: flex;
+    box-sizing: border-box;
 }
 
 .Class-item img{
     width: 100%;
     border-radius: 50%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
-    transition: .5s;
+    box-shadow: 0 10px 10px #0000001a;
+    transition: .7s;
     opacity: 1;
 
 }
@@ -264,12 +267,12 @@
 .Class-item:hover .txt{
     opacity: .8;
 }
-.Class-item .txt span{
+.Class-item .txt h7{
     font-size: 36px;
     color: #fff;
     font-weight: 500;
 }
-.Class-item .txt span:after{
+.Class-item .txt h7:after{
     content: '';
     display: block;
     width: 0%;
@@ -278,7 +281,7 @@
     background-color: #fff;
     transition: width .5s .5s;
 }
-.Class-item .txt:hover  span:after{
+.Class-item .txt:hover  h7:after{
     width: 100%;
 }
 .Class-item .txt p{
@@ -286,6 +289,27 @@
     color: #fff;
     font-weight: 500;
 }
+.ans-group{
+    color: #82cddb;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ans-group .clickAns{
+    position: absolute;
+    display: none;
+}
+.ans-group .clickAns span{
+    font-size: 32px;
+    color: #fbca4d;
+}
+
+
+
 
 /* 點選時間==================== */
 #signTime{
