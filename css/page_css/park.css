@@ -141,6 +141,30 @@
     text-align: left;
     line-height: 1.5em;
 }
+.txt-tltie{
+    text-align: center;
+}
+.content-txt h5{
+    width:100%;
+    font-size: 28px;
+    margin: auto;
+    font-weight: 500;
+    color: #fff;
+    float: left;
+    transition: .6s;
+    text-align: center;
+    line-height: 2em;
+    margin-bottom: 10px;
+}
+.content-txt p{
+    color: #6f7ea2;
+    font-size: 18px;
+}
+.content-txt span{
+    color: #fbca4d;
+    font-weight: 700;
+    font-size: 32px;
+}
 .content-pic{
     width: 200px;
     color: #fff;
@@ -308,6 +332,149 @@ html .chatBox-group{
 
 
 
+/* 畜牧組 */
+
+/* 每日任務 */
+.daily-banner{
+    width: 600px;
+    margin: auto;
+    padding: 40px 0 30px;
+}
+
+
+.daily-banner .item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #6f7ea2;
+    font-size: 18px;
+}
+
+.daily-banner .item h6{
+    color: #fbca4d;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.daily-banner .item p{
+    line-height: 18px;
+}
+.daily-banner .item .pic-img img{
+    width:90%;
+    vertical-align: top;
+    border-radius: 25px;
+}
+
+
+/* 垂直線 */
+.daily-banner .item:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #82cddb;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;       
+}
+/* 點點 */
+.daily-banner .item:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #fbca4d;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 50%;  
+}
+.daily-banner .item:nth-child(even){
+    flex-direction: row-reverse;
+}
+.daily-banner .item .pic{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0px 0;
+}
+
+.daily-banner .item:nth-child(odd) .pic{
+    padding-right: 20px;
+
+}
+.daily-banner .item:nth-child(odd) .pic-img {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left:36px;
+    width: 85%;
+}
+.daily-banner .item:nth-child(odd) .pic::before {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    content: '';
+    width: 35%;
+    height: 65%;
+    background-color: rgba(128, 197, 210, .5);
+    border-radius: 25px;
+}
+
+.daily-banner .item:nth-child(even) .pic{
+    padding-left: 20px;
+}
+.daily-banner .item:nth-child(even) .pic-img {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-left:30px;
+    width: 85%;
+}
+.daily-banner .item:nth-child(even) .pic::before {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    right: 0;
+    content: '';
+    width: 35%;
+    height: 65%;
+    background-color: rgba(128, 197, 210, .5);
+    border-radius: 25px;
+
+}
+
+.daily-banner .item .txt{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+.daily-banner .item h3{
+    padding-bottom: .3em;
+    margin-bottom: .4em;
+    /* 字體粗細 */
+    font-weight: 900;
+    color: #fbca4d;
+    font-size: 28px;
+}
+
+.daily-banner .item p{
+    line-height: 1.6;
+    font-weight: 500;
+    transition: .5s;
+    text-align: left;
+    color: #6f7ea2;
+    text-indent: 2em;
+}
+.daily-banner .item:nth-child(odd) .txt{
+    padding-left: 20px;
+}
+.daily-banner .item:nth-child(even) .txt{
+    padding-right: 20px;
+}
+
 
 
 
@@ -426,175 +593,6 @@ html .chatBox-group{
 .introduce-banner .container .txt p{
     margin-bottom: 1em;
 }
-
-
-/* 每日任務 */
-.daily-banner{
-    width: 960px;
-    margin: auto;
-    padding: 40px 0 60px;
-}
-.daily-banner .daily{
-    margin-bottom: 30px;
-}
-.daily-banner .daily > h2{
-    width: 960px;
-    font-size: 42px;
-    text-align: center;
-    padding: 20px 0;
-    margin: auto;
-    font-weight: 900;
-    color: #6f7ea2;
-}
-
-.daily-banner .daily > p{
-    width: 960px;
-    margin: auto;
-    padding: 20px 0px 20px;
-    text-align: center;
-    color: #6f7ea2;
-}
-
-
-.daily-banner .wrap{
-    width: 960px;
-    margin: auto;
-}
-.daily-banner .item{
-    /* outline: 1px solid red; */
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin-bottom: 0;
-    position: relative;
-}
-
-.daily-banner .item h3{
-    font-size: 32px;
-    display: inline-block;
-    border-bottom: 4px solid #fbca4d;
-    margin-bottom: 30px;
-}
-.daily-banner .item p{
-    font-size: 18px;
-    line-height: 1.7;
-}
-.daily-banner .item .pic-img img{
-    width:90%;
-    vertical-align: top;
-    border-radius: 25px;
-}
-
-
-/* 垂直線 */
-.daily-banner .item:before{
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: #82cddb;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;       
-}
-/* 點點 */
-.daily-banner .item:after{
-    content: '';
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: #fbca4d;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 50%;  
-}
-.daily-banner .item:nth-child(even){
-    flex-direction: row-reverse;
-}
-.daily-banner .item .pic{
-    width: 50%;
-    box-sizing: border-box;
-    padding: 40px 0;
-}
-
-.daily-banner .item:nth-child(odd) .pic{
-    padding-right: 20px;
-
-}
-.daily-banner .item:nth-child(odd) .pic-img {
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left:78px;
-    width: 85%;
-}
-.daily-banner .item:nth-child(odd) .pic::before {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    content: '';
-    width: 40%;
-    height: 60%;
-    background-color: rgba(128, 197, 210, .5);
-    border-radius: 25px;
-}
-
-.daily-banner .item:nth-child(even) .pic{
-    padding-left: 20px;
-}
-.daily-banner .item:nth-child(even) .pic-img {
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    margin-left:30px;
-    width: 85%;
-}
-.daily-banner .item:nth-child(even) .pic::before {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    right: 0;
-    content: '';
-    width: 40%;
-    height: 60%;
-    background-color: rgba(128, 197, 210, .5);
-    border-radius: 25px;
-
-}
-
-.daily-banner .item .txt{
-    width: 50%;
-    box-sizing: border-box;
-    padding: 40px 0;
-}
-.daily-banner .item h3{
-    padding-bottom: .3em;
-    margin-bottom: .4em;
-    /* 字體粗細 */
-    font-weight: 900;
-    color: #fbca4d;
-    font-size: 28px;
-}
-
-.daily-banner .item p{
-    line-height: 1.6;
-    font-weight: 500;
-    transition: .5s;
-    text-align: left;
-    color: #6f7ea2;
-    text-indent: 2em;
-}
-.daily-banner .item:nth-child(odd) .txt{
-    padding-left: 20px;
-}
-.daily-banner .item:nth-child(even) .txt{
-    padding-right: 20px;
-}
-
 
 
 
