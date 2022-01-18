@@ -129,7 +129,10 @@
 	position: relative;
 	animation: move-pic 15s infinite; 
     z-index: -2;
-
+}
+.base-banner #carousel:hover ul{ 
+    /* 滑鼠hover之後animation取消動作 */
+    animation-play-state: paused;
 }
 .base-banner #carousel li{
 	width: 200px;
