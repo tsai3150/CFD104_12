@@ -170,7 +170,7 @@
 
 /* 最新消息 蓋板 */
 #newBox{
-    display: none;
+    /* display: none; */
 }
  html .nowBox-group{
     background-color: rgba(255, 255, 255, .5);

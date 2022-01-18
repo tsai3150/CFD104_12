@@ -1,3 +1,3 @@
-function newBox(){
-    var btn = document.getElementById('newBox').style.display = 'block';
+function newClose(){
+    var btn = document.getElementById('newBox').style.display = 'none';
 }
