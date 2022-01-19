@@ -73,7 +73,6 @@
     font-size: 28px;
     text-align: center;
     border-bottom: 4px solid #fbca4d;
-
 }
 .personnel-item .txt p span{
     line-height: 1.5;
@@ -129,7 +128,21 @@
 .content-item{
     width: 220px;
     margin-left: 10px;
+    position: relative;
 }
+.content-item .content-pic::before{
+    content: '';
+    position: absolute;
+    top: 100px;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    z-index: 10;
+}
+.content-item .content-pic::before{
+    border-right: 40px solid rgba(128, 197, 210, .5);
+    left: 180px;
+}
+
 .content-txt{
     width: 600px;
     background-color: rgba(128, 197, 210, .5);
@@ -155,6 +168,7 @@
     text-align: center;
     line-height: 2em;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 .content-txt p{
     color: #6f7ea2;
@@ -347,18 +361,9 @@ html .chatBox-group{
     align-items: center;
     position: relative;
     color: #6f7ea2;
-    font-size: 18px;
 }
 
-.daily-banner .item h6{
-    color: #fbca4d;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.daily-banner .item p{
-    line-height: 18px;
-}
+
 .daily-banner .item .pic-img img{
     width:90%;
     vertical-align: top;
@@ -402,60 +407,31 @@ html .chatBox-group{
 }
 
 .daily-banner .item:nth-child(odd) .pic{
-    padding-right: 20px;
-
+    padding-right: 33px;
 }
 .daily-banner .item:nth-child(odd) .pic-img {
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
     margin-left:36px;
     width: 85%;
 }
-.daily-banner .item:nth-child(odd) .pic::before {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    content: '';
-    width: 35%;
-    height: 65%;
-    background-color: rgba(128, 197, 210, .5);
-    border-radius: 25px;
-}
 
 .daily-banner .item:nth-child(even) .pic{
-    padding-left: 20px;
+    padding-left: 24px;
 }
 .daily-banner .item:nth-child(even) .pic-img {
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 1rem;
-    margin-left:30px;
+    margin-left:36px;
     width: 85%;
 }
-.daily-banner .item:nth-child(even) .pic::before {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    right: 0;
-    content: '';
-    width: 35%;
-    height: 65%;
-    background-color: rgba(128, 197, 210, .5);
-    border-radius: 25px;
 
-}
 
 .daily-banner .item .txt{
     width: 50%;
     box-sizing: border-box;
     padding: 40px 0;
 }
-.daily-banner .item h3{
+.daily-banner .item h6{
     padding-bottom: .3em;
-    margin-bottom: .4em;
     /* 字體粗細 */
-    font-weight: 900;
+    font-weight: 600;
     color: #fbca4d;
     font-size: 28px;
 }
@@ -465,7 +441,7 @@ html .chatBox-group{
     font-weight: 500;
     transition: .5s;
     text-align: left;
-    color: #6f7ea2;
+    color: #fff;
     text-indent: 2em;
 }
 .daily-banner .item:nth-child(odd) .txt{
